@@ -31,3 +31,54 @@ body {
     text-wrap: balance;
   }
 }
+
+.listnavbar {
+  @apply 
+  text-center 
+  text-white 
+  text-base 
+  font-medium 
+  text-[14px] 
+  px-12 py-2 
+  rounded-xl
+  ease-in-out
+  duration-800
+  transition-all
+}
+
+.listnavbar:hover {
+  @apply
+  text-[15px]
+  bg-gradient-glass
+  duration-800
+}
+
+.gradienttext {
+  color: linear-gradient(45  deg, #7BC0FF -7.7%, #725CFF 78.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn{
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.btn:hover {
+  background-color: #747474;
+}
+
+.job_container{
+  @apply items-center justify-center container w-[689px] h-[357px] bg-gradient-glass rounded-[16px] drop-shadow-2xl
+  p-[32px];
+}
+
+.exportcolor{
+  fill:#ABABAB;
+}
+
+.exportcolor:hover{
+  fill:#121212;
+}
