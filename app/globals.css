@@ -48,7 +48,7 @@ body {
 
 .listnavbar:hover {
   @apply
-  text-[15px]
+  text-[14.5px]
   bg-gradient-glass
   duration-800
 }

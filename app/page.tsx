@@ -1,22 +1,23 @@
 import Image from "next/image";
 import Link from 'next/link';
 import background from '../../public/grids.svg'
+import ProjectSection from "@/components/projects";
 
 export default function Home() {
   return (
     <main>
-      <header className="fixed flex bg-transparent w-full h-20 items-center justify-center">
+      <header className="fixed flex z-50 bg-[#000000] w-full h-20 items-center justify-center shadow-2xl">
         <ul className="flex">
-          <li className="listnavbar">Home</li>
-          <li className="listnavbar">About Me</li>
-          <li className="listnavbar">Experiences</li>
-          <li className="listnavbar">Projects</li>
-          <li className ="listnavbar">Contacts</li>
+          <a href="#home"><li className="listnavbar">Home</li></a>
+          <a href="#aboutme"><li className="listnavbar">About Me</li></a>
+          <a href="#experiences"><li className="listnavbar">Experiences</li></a>
+          <a href="#projects"><li className="listnavbar">Projects</li></a>
+          <a href="#contacts"><li className ="listnavbar">Contacts</li></a>
         </ul>
       </header>
       
       {/* hero */}
-      <section className = "w-full h-[920px] items-center flex justify-center">
+      <section id="home" className = "w-full h-[920px] items-center flex justify-center">
         <div className="container flex items-center justify-center self-center">
           <div className="space-y-10">
             <div className = "flex-row">
@@ -29,10 +30,10 @@ export default function Home() {
 
             <div className="space-x-4">
               <Link href="https://drive.google.com/uc?export=download&id=1MTfq-1S3hDR8pdZ0bQFNoxDhGcc6zcin">
-                <button className="px-[27px] py-[8px] rounded-[8px] bg-gradient-glass text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-bold" id="portfolio">Portfolio</button>
+                <button className="px-[27px] py-[8px] rounded-[8px] bg-gradient-glass text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-normal" id="portfolio">Portfolio</button>
               </Link>
               <Link href="https://drive.google.com/uc?export=download&id=1_QeC48sM0Mtt9k8J0UGyCVvhDEdYoAeD">
-                <button className="px-[27px] py-[8px] rounded-[8px] bg-gradient-glass text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-bold" id="cv">CV</button>
+                <button className="px-[27px] py-[8px] rounded-[8px] bg-gradient-glass text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-normal" id="cv">CV</button>
               </Link>
             </div>
           </div>
@@ -43,7 +44,7 @@ export default function Home() {
       </section>
 
       {/* about me */}
-      <section className="h-fit w-full">
+      <section id="aboutme" className="h-fit w-full">
       <div className="items-center justify-center w-full align-top flex mx-auto gap-28 py-32">
           <div className="relative w-[268.19px] h-[352px] object-contain">
             <Image src="/ganteng.png" alt="fotonya razan" fill></Image>
@@ -62,7 +63,7 @@ export default function Home() {
 
           <div className="space-y-4">
             <div className="text-[48px] font-extrabold">🎓 Education</div>
-            <div className="relative w-[314.19px] h-[278.93px]">
+            <div className="relative w-[314.19px] h-[278.93px]">event that provides a platform for the community, especially those within the ITS environment, to share their intriguing ideas. The aim of this event is to spread ideas a
               <Image src="/education.svg" alt="education" fill></Image>
             </div>
           </div>
@@ -70,14 +71,14 @@ export default function Home() {
       </section>
 
       {/* experience */}
-      <section className="py-32 space-x-16 flex-col mx-auto justify-center items-center w-full">
+      <section id="experiences" className="pt-[128px] pb-16 space-x-16 flex-col mx-auto justify-center items-center w-full">
         <div className="space-x-16 flex mx-auto justify-center items-center">
           <div className="relative w-[125px] h-[128.47px] drop-shadow-xl">
             <Image src="/cup.svg" alt="cup" fill></Image>
           </div>
           <div className="space-x-4">
-            <h1 className="text-center font-bold text-[48px]">Where have I</h1>
-            <h1 className="text-center font-extrabold text-[64px] text-blue">Worked On?</h1>
+            <h1 className="text-center font-bold text-[48px]"> Where Have I</h1>
+            <h1 className="text-center font-extrabold text-[64px] text-[#7791FF]">Worked On?</h1>
             <p  className="text-center font-thin text-[16px]">Here is my some experience in related fields.</p>
           </div>
           <div className="w-[80px] h-[186.67px] drop-shadow-xl">
@@ -200,9 +201,101 @@ export default function Home() {
       </section>
 
       {/* project */}
-      <section>
+      <ProjectSection/>
+
+      
+
+      {/* contacts */}
+      <section id="contacts" className="w-full h-fit pt-[64px] py-[32px] flex-col mx-auto justify-center items-center bg-gradient-glass">
+        <h1 className="font-extrabold text-[48px] justfiy-center max-w-[572px] mx-auto items-center h-fit text-center mb-12">Dive In below to explore our collaboration!</h1>
+        
+        {/* baris pertama */}
+        <div className="flex justify-center mx-auto p-4 gap-[32px]">
+          {/* item pertama */}
+          <Link href="https://github.com/mhmdrazn">
+            <button className="max-w-[310px] space-y-[12px] px-[86px] py-[16px] h-fit bg-black justify-center items-center rounded-[12px] hover:bg-[#2E2E2E] shadow-xl ease-in-out duration-300">
+              <div className="flex gap-[24px]">
+                <div className="relative w-[30px] h-[30px] self-center">
+                  <Image src="/github.png" alt="github" fill></Image>
+                </div>
+                <div className="font-bold text-[24px]">Github</div>
+              </div>
+              <div className="text-[#696969]">
+                @mhmdrazn
+              </div>
+            </button>
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/muhammadrazan/">
+            <button className="w-[310px] space-y-[12px] py-[16px] h-fit bg-black justify-center items-center rounded-[12px] hover:bg-[#2E2E2E] shadow-xl ease-in-out duration-300">
+              <div className="flex gap-[24px] justify-center">
+                <div className="relative w-[30px] h-[30px] self-center">
+                  <Image src="/linkedin.png" alt="linkedin" fill></Image>
+                </div>
+                <div className="font-bold text-[24px] self-center">LinkedIn</div>
+              </div>
+              <div className="text-[#696969]">
+                Muhammad Razan
+              </div>
+            </button>
+          </Link>
+
+          <Link href="https://www.instagram.com/mhmdrazn/">
+            <button className="w-[310px] space-y-[12px] py-[16px] h-fit bg-black justify-center items-center rounded-[12px] contact-hover hover:bg-[#2E2E2E] shadow-xl ease-in-out duration-300">
+              <div className="flex gap-[24px] justify-center">
+                <div className="relative w-[30px] h-[30px] self-center">
+                  <Image src="/ig.png" alt="ig" fill></Image>
+                </div>
+                <div className="font-bold text-[24px] self-center">Instagram</div>
+              </div>
+              <div className="text-[#696969]">
+                @mhmdrazn
+              </div>
+            </button>
+          </Link>
+        </div>
+
+        {/* baris kedua */}
+        <div className="flex justify-center mx-auto p-4 mb-[64px] gap-[32px]">
+          {/* item pertama */}
+          <Link href="https://dribbble.com/mhmdrazn">
+            <button className="w-[310px] space-y-[12px] px-[16px] py-[16px] h-fit bg-black justify-center items-center rounded-[12px] hover:bg-[#2E2E2E] shadow-xl ease-in-out duration-300">
+              <div className="flex gap-[24px] justify-center">
+                <div className="relative w-[30px] h-[30px] self-center">
+                  <Image src="/dribbble.png" alt="dribbble" fill></Image>
+                </div>
+                <div className="font-bold text-[24px]">Dribbble</div>
+              </div>
+              <div className="text-[#696969]">
+                @mhmdrazn
+              </div>
+            </button>
+          </Link>
+
+          <Link href="https://medium.com/@mhmdrazn">
+            <button className="w-[310px] space-y-[12px] py-[16px] h-fit bg-black justify-center items-center rounded-[12px] hover:bg-[#2E2E2E] shadow-xl ease-in-out duration-300">
+              <div className="flex gap-[24px] justify-center">
+                <div className="relative w-[30px] h-[30px] self-center">
+                  <Image src="/medium.png" alt="medium" fill></Image>
+                </div>
+                <div className="font-bold text-[24px] self-center">Medium</div>
+              </div>
+              <div className="text-[#696969]">
+                @mhmdrazn
+              </div>
+            </button>
+          </Link>
+        </div>
+
+        <div className="flex justify-center items-center gap-3">
+          <div className="w-[20px] h-[20px] relative place-content-center">
+            <Image src="/c.svg" alt="c" fill></Image>
+          </div>
+          <div className="text-[#696969] font-semibold text-[18px]"> Muhammad Razan. All Rights Reserved.</div>
+        </div>
         
       </section>
+
     </main>
   );
 }
