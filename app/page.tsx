@@ -63,7 +63,7 @@ export default function Home() {
 
           <div className="space-y-4">
             <div className="text-[48px] font-extrabold">🎓 Education</div>
-            <div className="relative w-[314.19px] h-[278.93px]">event that provides a platform for the community, especially those within the ITS environment, to share their intriguing ideas. The aim of this event is to spread ideas a
+            <div className="relative w-[314.19px] h-[278.93px]">
               <Image src="/education.svg" alt="education" fill></Image>
             </div>
           </div>
