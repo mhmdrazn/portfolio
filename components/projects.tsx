@@ -5,7 +5,7 @@ export default function projects() {
     return (
         <main id="projects">
 
-            <section id="buangbijak" className="pt-[64px] pb-[64px] justify-center items-center flex-col">
+            <section id="buangbijak" className= "pt-[64px] pb-[64px] justify-center items-center flex-col">
                 <div className="pt-16 pb-16 space-y-6">
                     <h1 className="text-center font-extrabold text-[64px] text-[#7791FF]">My Projects</h1>
                     <div className="text-center font-thin text-[16px]">Below is some of my highlighted project.</div>
@@ -30,25 +30,22 @@ export default function projects() {
                 {/* lokantara */}
                 <div className="flex flex-col justify-center items-center gap-8 py-4">
                     <div className="flex flex-row justify-center items-center py-6 space-x-24">
-                        <div className="relative h-[491.72px] w-[400px] rounded-3xl justify-center shadow-3xl shadow-[#525252]">
+                        <div className="relative h-[491.72px] w-[400px] rounded-3xl justify-center">
                             <Image src="/projects/show-lokantara.png" alt="showloka" fill></Image>
                         </div>
                         <div className="flex-col items-start space-y-6">
                             <div className="relative h-[45px] w-[236.61px]">
                                 <Image src="/projects/loka.png" alt="loka" fill></Image> 
                             </div>
-                            <p className="font-normal text-[#ABABAB] w-[590px] text-justify">Focusing on the Nusantara subtheme, this app offers unforgettable travel experiences and promotes unique  destinations across Indonesia. Lokantara provides up-to-date information on tourist spots, cultural richness, and local cuisine, supporting domestic tourism and fostering pride in Indonesia's heritage. 
-                            </p>
+
                             <p className="font-normal text-[#ABABAB] w-[590px] text-justify">
-                                Lokantara is an online tour platform for local and international travelers in Indonesia, offering interactive and gamified travel experiences. It guides travelers to iconic spots with gamified routes and includes features like a translator, currency calculator, nearby friends, and a one-click emergency assistance.
-                            </p>
+                                Lokantara, focusing on the Nusantara subtheme, offers unique travel experiences and highlights Indonesia's diverse destinations. This online tour platform provides up-to-date information on tourist spots, cultural heritage, and local cuisine, promoting domestic tourism and fostering pride in Indonesia. Lokantara guides travelers to iconic locations with interactive, gamified routes.                            </p>
                             <p className="font-normal text-[#ABABAB] w-[590px] text-justify">
-                                The platform also provides event information and a marketplace where users can exchange points earned from visiting attractions and completing quests for local Indonesian crafts, enhancing the travel experience with engaging and practical tools.
-                            </p>
+                                The platform includes useful features such as a translator, currency calculator, nearby friends, and one-click emergency assistance. It also offers event information and a marketplace where users can exchange points earned from visiting attractions and completing quests for local crafts. These features make travel more engaging and practical while showcasing Indonesia's rich culture.                            </p>
                             <Link href="">
                                 <button id="prototype" className="mt-6 flex place-content-center gap-2 px-[24px] py-[8px] rounded-[8px] bg-[#525252] text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-medium">
                                     <div className="h-[23px]">
-                                        Prototype
+                                        See Prototype
                                     </div>
                                     <div className="relative self-center h-[15px] w-[15px]">
                                         <Image src="/export.svg" alt="export" fill></Image>
@@ -79,7 +76,7 @@ export default function projects() {
                             <Link href="https://intip.in/PrototypeBuangBijak">
                                 <button id="prototype" className="mt-6 flex place-content-center gap-2 px-[24px] py-[8px] rounded-[8px] bg-[#525252] text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-medium">
                                     <div className="h-[23px]">
-                                        Prototype
+                                        See Prototype
                                     </div>
                                     <div className="relative self-center h-[15px] w-[15px]">
                                         <Image src="/export.svg" alt="export" fill></Image>
@@ -113,7 +110,7 @@ export default function projects() {
                             <Link href="https://www.figma.com/proto/irgoRWbKsUTcinAQKS0K2D/URide?type=design&node-id=75-661&t=I4ODSpyIZ2bMxR9T-0&scaling=scale-down&page-id=75%3A661&starting-point-node-id=579%3A1668 ">
                                 <button id="prototype" className="mt-6 flex place-content-center gap-2 px-[24px] py-[8px] rounded-[8px] bg-[#525252] text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-medium">
                                     <div className="h-[23px]">
-                                        Prototype
+                                        See Prototype
                                     </div>
                                     <div className="relative self-center h-[15px] w-[15px]">
                                         <Image src="/export.svg" alt="export" fill></Image>
@@ -127,7 +124,40 @@ export default function projects() {
                     </div>
 
                     <div className="mx-auto relative w-[1000px] h-[562.5px]">
-                        <Image src="/projects/page-buangbijak.png" alt="pagebubij" fill></Image>
+                        <Image src="/projects/page-uride.png" alt="pagebubij" fill></Image>
+                    </div>
+                </div>
+
+                {/* Aimo */}
+                <div className="flex flex-col justify-center items-center gap-8 py-4">
+                    <div className="flex flex-row justify-center items-center py-12 space-x-[64px]">
+                        <div className="flex-col items-start space-y-6">
+                            <div className="relative h-[45px] w-[131px]">
+                                <Image src="/projects/aimo.png" alt="aimo" fill></Image> 
+                            </div>
+                            <p className="font-normal text-[#ABABAB] w-[553.14px] text-justify">
+                                 Aimo is a mental health protection application designed for expectant mothers to reduce the risk of postpartum depression (PPD). Through literacy-based education, Aimo offers early prevention and personalized post-birth guidance using the Edinburgh Postnatal Depression Scale (EPDS). </p>
+                            <p className="font-normal text-[#ABABAB] w-[553.14px] text-justify" >
+                                By understanding depression levels, Aimo provides tailored support steps for companions, including inclusive involvement of not only husbands but also other family members, close friends, and healthcare professionals, ensuring comprehensive assistance for mothers experiencing PPD.
+                            </p>
+                            <Link href="https://www.figma.com/proto/oa0GcifcAdurFxMFdaa3Bo/Aimo?node-id=233-2616&t=BCEM1VluA9MNekoN-1&scaling=contain&page-id=9%3A3&starting-point-node-id=233%3A2616" >
+                                <button id="prototype" className="mt-6 flex place-content-center gap-2 px-[24px] py-[8px] rounded-[8px] bg-[#525252] text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-medium">
+                                    <div className="h-[23px]">
+                                        See Prototype
+                                    </div>  
+                                    <div className="relative self-center h-[15px] w-[15px]">
+                                        <Image src="/export.svg" alt="export" fill></Image>
+                                    </div>
+                                </button>
+                            </Link>
+                        </div>
+                        <div className="relative h-[418px] w-[468.86px] rounded-3xl justify-center shadow-3xl shadow-[#525252]">
+                            <Image src="/projects/show-aimo.png" alt="showaimo" fill></Image>
+                        </div>
+                    </div>
+
+                    <div className="mx-auto relative w-[1000px] h-[562.5px]">
+                        <Image src="/projects/page-aimo.png" alt="pageaimo" fill></Image>
                     </div>
                 </div>
             </section>
