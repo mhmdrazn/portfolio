@@ -105,7 +105,10 @@ export default function projects() {
                                 <Image src="/projects/uride.png" alt="uride" fill></Image> 
                             </div>
                             <p className="font-normal text-[#ABABAB] w-[421px] text-justify">
-                                URide addresses common challenges faced by motor vehicle users in Indonesia, offering on-demand repair services and vehicle health monitoring. It aims to enhance awareness of routine maintenance and provide efficient access to skilled mechanics, promoting safer and more reliable driving experiences. URide also fosters opportunities for workshop businesses while ensuring transparent pricing and quality repairs, thereby creating a comprehensive solution for motor vehicle maintenance and assistance.                            
+                                URide addresses common challenges faced by motor vehicle users in Indonesia, offering on-demand repair services and vehicle health monitoring. It aims to enhance awareness of routine maintenance and provide efficient access to skilled mechanics, promoting safer and more reliable driving experiences.                              
+                            </p>
+                            <p className="font-normal text-[#ABABAB] w-[421px] text-justify">
+                            URide also fosters opportunities for workshop businesses while ensuring transparent pricing and quality repairs, thereby creating a comprehensive solution for motor vehicle maintenance and assistance.
                             </p>
                             <Link href="https://www.figma.com/proto/irgoRWbKsUTcinAQKS0K2D/URide?type=design&node-id=75-661&t=I4ODSpyIZ2bMxR9T-0&scaling=scale-down&page-id=75%3A661&starting-point-node-id=579%3A1668 ">
                                 <button id="prototype" className="mt-6 flex place-content-center gap-2 px-[24px] py-[8px] rounded-[8px] bg-[#525252] text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-medium">
