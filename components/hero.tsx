@@ -5,31 +5,29 @@ export default function hero() {
     return (
         <main>
             <section id="home" className = "w-full h-[990px] bg-black items-center flex justify-center">
-                {/* <div className="justify-center items-center w-[803px] h-[386px] absolute -z-0">
+                
+                {/* <div className="h-[284.17px] w-[1480px] absolute z-10 mb-32">
+                    <Image src="/hero/developer.svg" alt="dev" fill></Image>
+                </div>
+                <div className="w-[1480px] h-[244px] items-center absolute z-20 mb-56">
+                    <Image src="/hero/designer.png" alt="designer" fill></Image>
+                </div> */}
+
+                <div className="h-[581px] w-[1208.66px] absolute -z-0">
                     <Image src="/hero/web.svg" alt="web" fill></Image>
                 </div>
-                <div className="absolute h-[143.21px] w-[374px]">
-                    <Image src="/hero/code.png" alt="code" fill></Image>
-                </div> */}
-                <div className="w-[1347.32px] h-[478px] absolute -z-0 place-self-center mb-24">
-                    <Image src="/hero/hero-bg.png" alt="hero" fill></Image>
+
+                <div className="h-[293px] w-[1480px] absolute -z-0 mb-32">
+                    <Image src="/hero/island.svg" alt="island" fill></Image>
                 </div>
 
-                <div className="w-[1313px] h-[84px] absolute place-self-start mt-[370px]">
-                    <Image src="/hero/a-de.png" alt="ade" fill></Image>
-                </div>
-
-                <div className="w-[1313px] h-[79px] absolute mb-8">
-                    <Image src="/hero/dev.svg" alt="dev" fill></Image>
-                </div>
-
-                <div className="container flex justify-center z-20 place-self-end mb-40">
+                <div className="container flex justify-center z-20 place-self-end mb-32">
                     <div className="space-y-6 justify-center">
                         <div className = "flex-row">
                             <h1 className = "text-[72px] font-extrabold text-shadow-white">Design. Develop. Delight</h1>
                             <div className = " items-center justify-center">
-                                <p className = "text-[36px] font-medium justify-center text-center">I am <span className="text-gradient-text font-semibold">Muhammad Razan</span></p>
-                                <p className = "text-[28px] font-medium justify-center text-center">A passionate UI/UX Designer</p>
+                                <p className = "text-[28px] font-medium justify-center text-center">I am <span>Muhammad Razan</span></p>
+                                <p className = "text-[24px] font-medium justify-center text-center">A passionate UI/UX Designer</p>
                             </div>
                         </div>
 
