@@ -8,8 +8,8 @@ import Experience from "@/components/experience";
 export default function Home() {
   return (
     <main>
-      <header className="fixed flex z-50 bg-[#000000] w-full h-20 items-center justify-center shadow-2xl">
-        <ul className="flex">
+      <header className="fixed flex z-50 bg-[#121212] w-full h-20 items-center justify-center gap-[56px] shadow-2xl">
+        <ul className="flex"> 
           <a href="#home"><li className="listnavbar">Home</li></a>
           <a href="#aboutme"><li className="listnavbar">About Me</li></a>
           <a href="#experiences"><li className="listnavbar">Experiences</li></a>
