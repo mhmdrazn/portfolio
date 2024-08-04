@@ -18,7 +18,6 @@ export default function Home() {
         </ul>
       </header>
       
-      {/* hero */}
       <Hero/>
 
       {/* about me */}
@@ -48,13 +47,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* experience */}
       <Experience/>
 
-      {/* project */}
       <ProjectSection/>
-
-      
 
       {/* contacts */}
       <section id="contacts" className="w-full h-fit pt-[64px] py-[32px] flex-col mx-auto justify-center items-center bg-gradient-glass">
