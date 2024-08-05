@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Hero from "@/components/hero";
 import ProjectSection from "@/components/projects";
 import Experience from "@/components/experience";
+import Card from "@/components/molecules/contactCard";
 
 export default function Home() {
   return (
@@ -52,85 +53,51 @@ export default function Home() {
       <ProjectSection/>
 
       {/* contacts */}
-      <section id="contacts" className="w-full h-fit pt-[64px] py-[32px] flex-col mx-auto justify-center items-center bg-gradient-glass">
-        <h1 className="font-extrabold text-[48px] justfiy-center max-w-[572px] mx-auto items-center h-fit text-center mb-12">Dive In below to explore our collaboration!</h1>
+      <section id="contacts" className="w-full h-fit pt-[64px] py-[32px] flex-col flex mx-auto justify-center items-center bg-gradient-glass gap-6">
+        
+
+        <h1 className="font-extrabold text-[32px] justfiy-center max-w-[360px] mx-auto items-center h-fit text-center mb-8 md:text-[48px] md:max-w-fit">Dive In below to explore our collaboration!</h1>
         
         {/* baris pertama */}
-        <div className="flex justify-center mx-auto p-4 gap-[32px]">
+        <div className="justify-center items-center mx-auto flex-col flex gap-6 md:flex-row">
           {/* item pertama */}
-          <Link href="https://github.com/mhmdrazn">
-            <button className="max-w-[310px] space-y-[12px] px-[86px] py-[16px] h-fit bg-black justify-center items-center rounded-[12px] hover:bg-[#2E2E2E] shadow-xl ease-in-out duration-300">
-              <div className="flex gap-[24px]">
-                <div className="relative w-[30px] h-[30px] self-center">
-                  <Image src="/github.png" alt="github" fill></Image>
-                </div>
-                <div className="font-bold text-[24px]">Github</div>
-              </div>
-              <div className="text-[#696969]">
-                @mhmdrazn
-              </div>
-            </button>
-          </Link>
+          <Card
+            url="https://github.com/mhmdrazn"
+            img="/contacts/github.png"
+            username="mhmdrazn"
+            platform="Github"
+          />
+          <Card
+            url="https://www.linkedin.com/in/muhammadrazan/"
+            img="/contacts/linkedin.png"
+            username="Muhammad Razan"
+             platform="LinkedIn"
+          />
 
-          <Link href="https://www.linkedin.com/in/muhammadrazan/">
-            <button className="w-[310px] space-y-[12px] py-[16px] h-fit bg-black justify-center items-center rounded-[12px] hover:bg-[#2E2E2E] shadow-xl ease-in-out duration-300">
-              <div className="flex gap-[24px] justify-center">
-                <div className="relative w-[30px] h-[30px] self-center">
-                  <Image src="/linkedin.png" alt="linkedin" fill></Image>
-                </div>
-                <div className="font-bold text-[24px] self-center">LinkedIn</div>
-              </div>
-              <div className="text-[#696969]">
-                Muhammad Razan
-              </div>
-            </button>
-          </Link>
-
-          <Link href="https://www.instagram.com/mhmdrazn/">
-            <button className="w-[310px] space-y-[12px] py-[16px] h-fit bg-black justify-center items-center rounded-[12px] contact-hover hover:bg-[#2E2E2E] shadow-xl ease-in-out duration-300">
-              <div className="flex gap-[24px] justify-center">
-                <div className="relative w-[30px] h-[30px] self-center">
-                  <Image src="/ig.png" alt="ig" fill></Image>
-                </div>
-                <div className="font-bold text-[24px] self-center">Instagram</div>
-              </div>
-              <div className="text-[#696969]">
-                @mhmdrazn
-              </div>
-            </button>
-          </Link>
+          <Card
+            url="https://www.instagram.com/mhmdrazn/"
+            img="/contacts/ig.png"
+            username="mhmdrazn"
+             platform="Instagram"
+          />
         </div>
 
         {/* baris kedua */}
-        <div className="flex justify-center mx-auto p-4 mb-[64px] gap-[32px]">
+        <div className="justify-center items-center mx-auto flex-col flex mb-8 gap-6 md:flex-row">
           {/* item pertama */}
-          <Link href="https://dribbble.com/mhmdrazn">
-            <button className="w-[310px] space-y-[12px] px-[16px] py-[16px] h-fit bg-black justify-center items-center rounded-[12px] hover:bg-[#2E2E2E] shadow-xl ease-in-out duration-300">
-              <div className="flex gap-[24px] justify-center">
-                <div className="relative w-[30px] h-[30px] self-center">
-                  <Image src="/dribbble.png" alt="dribbble" fill></Image>
-                </div>
-                <div className="font-bold text-[24px]">Dribbble</div>
-              </div>
-              <div className="text-[#696969]">
-                @mhmdrazn
-              </div>
-            </button>
-          </Link>
+          <Card
+            url="https://www.dribbble.com/mhmdrazn/"
+            img="/contacts/dribbble.png"
+            username="mhmdrazn"
+             platform="Dribbble"
+          />
 
-          <Link href="https://medium.com/@mhmdrazn">
-            <button className="w-[310px] space-y-[12px] py-[16px] h-fit bg-black justify-center items-center rounded-[12px] hover:bg-[#2E2E2E] shadow-xl ease-in-out duration-300">
-              <div className="flex gap-[24px] justify-center">
-                <div className="relative w-[30px] h-[30px] self-center">
-                  <Image src="/medium.png" alt="medium" fill></Image>
-                </div>
-                <div className="font-bold text-[24px] self-center">Medium</div>
-              </div>
-              <div className="text-[#696969]">
-                @mhmdrazn
-              </div>
-            </button>
-          </Link>
+          <Card
+            url="https://www.instagram.com/medium/"
+            img="/contacts/medium.png"
+            username="mhmdrazn"
+             platform="Medium"
+          />
         </div>
 
         <div className="flex justify-center items-center gap-3">
@@ -139,7 +106,6 @@ export default function Home() {
           </div>
           <div className="text-[#696969] font-semibold text-[18px]"> Muhammad Razan. All Rights Reserved.</div>
         </div>
-        
       </section>
 
     </main>
