@@ -22,7 +22,7 @@ export default function navbar() {
         <div className='fixed flex flex-col z-50'>
             
             <div className='bg-[#121212] bg-opacity-75 backdrop-blur-xl w-full px-8 py-6 flex flex-col items-left h-fit'>
-                <div className='flex items-center justify-between md:bg-gre'>
+                <div className='flex items-center justify-between'>
 
                     <div className='relative h-[30px] w-[30px]'>
                         <Image src="/logo.svg" alt='logo' fill></Image>
@@ -54,13 +54,12 @@ export default function navbar() {
                 </div>            
             </div>  
 
-            <div className='w-screen h-full bg-opacity-90'>
+            <div className='w-screen h-full bg-opacity-90 '>
                 <motion.ul
                     initial={{ opacity: 0, y: -50 }}
                     animate={controls}
                     transition={{ duration: 0.3 }}
-                    className='flex flex-col gap-8 items-start px-8 w-full h-screen pt-6 bg-[#121212] bg-opacity-75 backdrop-blur-xl'
-                >
+                    className={`flex flex-col gap-8 items-start px-8 w-full h-screen pt-6 bg-[#121212] bg-opacity-75 backdrop-blur-xl md:hidden ${show ? '' : 'hidden'}`}                >
                     <a href="#home"><li className="listnavbar">Home</li></a>
                     <a href="#aboutme"><li className="listnavbar">About Me</li></a>
                     <a href="#experiences"><li className="listnavbar">Experiences</li></a>
