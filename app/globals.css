@@ -35,22 +35,21 @@ body {
 .listnavbar {
   @apply 
   text-center 
-  text-white 
+  text-white
+  text-opacity-70
   text-base 
-  font-medium 
+  font-medium
   text-[14px] 
-  px-12 py-2 
-  rounded-xl
   ease-in-out
-  duration-800
+  duration-300
   transition-all
 }
 
 .listnavbar:hover {
   @apply
-  text-[14.5px]
-  bg-gradient-glass
-  duration-800
+  text-[14px]
+  text-white
+  duration-300
 }
 
 .gradienttext {

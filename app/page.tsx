@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from 'next/link';
 
+import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import ProjectSection from "@/components/projects";
 import Experience from "@/components/experience";
@@ -9,48 +10,10 @@ import Card from "@/components/molecules/contactCard";
 export default function Home() {
   return (
     <main>
-      <header className="fixed flex z-50 bg-[#121212] w-full h-20 items-center justify-center gap-[56px] shadow-2xl">
-        <ul className="flex"> 
-          <a href="#home"><li className="listnavbar">Home</li></a>
-          <a href="#aboutme"><li className="listnavbar">About Me</li></a>
-          <a href="#experiences"><li className="listnavbar">Experiences</li></a>
-          <a href="#projects"><li className="listnavbar">Projects</li></a>
-          <a href="#contacts"><li className ="listnavbar">Contacts</li></a>
-        </ul>
-      </header>
-      
-      <Hero/>
-
-      {/* about me */}
-      <section id="aboutme" className="h-fit w-full">
-      <div className="items-center justify-center w-full align-top flex mx-auto gap-28 py-32">
-          <div className="relative w-[268.19px] h-[352px] object-contain">
-            <Image src="/ganteng.png" alt="fotonya razan" fill></Image>
-          </div>
-
-          <div className="container flex-col h-fit w-fit space-y-6">
-            <div className="text-[48px] font-extrabold">👋 It is Me!</div>
-            <div className="font-thin max-w-[330px] text-justify">
-              Hello! I'm <span className="font-extrabold">Muhammad Razan Parisya Putra</span>, an Undergraduate Student. I have experienced 2+ years in UI/UX Design and Front-End (just beginning 😚).
-            </div>
-            <div className="max-w-[330px] text-justify">
-              My journey is driven by a love for creating intuitive, user-centric designs that not only look fantastic but also provide seamless experiences. Join me as I continue to innovate and make a mark in these exciting fields!
-            </div>
-          </div>
+      <Navbar/>
 
 
-          <div className="space-y-4">
-            <div className="text-[48px] font-extrabold">🎓 Education</div>
-            <div className="relative w-[314.19px] h-[278.93px]">
-              <Image src="/education.svg" alt="education" fill></Image>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Experience/>
-
-      <ProjectSection/>
+     
 
       {/* contacts */}
       <section id="contacts" className="w-full h-fit pt-[64px] py-[32px] flex-col flex mx-auto justify-center items-center bg-gradient-glass gap-6">
