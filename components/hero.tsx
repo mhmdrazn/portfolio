@@ -5,21 +5,21 @@ export default function hero() {
     return (
         <main>
             <section id="home" className = "w-full h-screen bg-black items-center flex justify-center">
-                <div className="h-[581px] w-[1208.66px] absolute -z-0">
+                <div className="h-[581px] w-[1208.66px] absolute -z-0 scale-[0.35] md:scale-[0.45] lg:scale-[0.65] top-32">
                     <Image src="/hero/web.svg" alt="web" fill></Image>
                 </div>
 
-                <div className="h-[293px] w-[1480px] absolute -z-0 mb-32">
+                <div className="h-[293px] w-[1480px] absolute -z-0 mb-32 scale-[0.30] md:scale-[0.45] lg:scale-[0.65] top-56">
                     <Image src="/hero/island.svg" alt="island" fill></Image>
                 </div>
 
-                <div className="container flex justify-center z-20 place-self-end mb-32">
+                <div className="container flex justify-center z-20 mt-24 md:mt-56 lg:mt-96">
                     <div className="space-y-6 justify-center">
-                        <div className = "flex-row space-y-1">
-                            <h1 className = "text-[72px] font-extrabold text-shadow-white">Design. Develop. Delight</h1>
-                            <div className = " items-center justify-center">
-                                <p className = "text-[28px] font-medium justify-center text-center">I am <span>Muhammad Razan</span></p>
-                                <p className = "text-[24px] font-medium justify-center text-center">A passionate UI/UX Designer</p>
+                        <div className = "flex-row lg:space-y-4">
+                            <h1 className = "text-[32px] font-extrabold text-shadow-white text-center md:text-[48px] lg:text-[64px]">Design. Develop. Delight</h1>
+                            <div className = " items-center justify-center flex flex-col gap-2 lg:gap-2">
+                                <p className = "text-[18px] font-regular justify-center text-center lg:text-[24px]">I am <span>Muhammad Razan</span></p>
+                                <p className = "text-[16px] font-regular justify-center text-center lg:text-[24px]">A passionate UI/UX Designer</p>
                             </div>
                         </div>
 

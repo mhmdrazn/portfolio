@@ -58,6 +58,7 @@ export default function navbar() {
                 </div>            
             </div>  
 
+                        
             <div className='w-screen h-full bg-opacity-90 '>
                 <motion.ul
                     initial={{ opacity: 0, y: -50 }}

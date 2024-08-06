@@ -73,7 +73,7 @@ export default function Home() {
           <div className="w-[12px] h-[12px] md:h-[14px] md:w-[14px] relative place-content-center">
             <Image src="/c.svg" alt="c" fill></Image>
           </div>
-          <div className="text-[#696969] font-semibold text-[14px] md:text-[16px]"> Muhammad Razan. All Rights Reserved.</div>
+          <div className="text-[#696969] font-regular text-[14px] md:text-[16px]"> Muhammad Razan</div>
         </div>
       </section>
 
