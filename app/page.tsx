@@ -76,7 +76,6 @@ export default function Home() {
           <div className="text-[#696969] font-regular text-[14px] md:text-[16px]"> Muhammad Razan</div>
         </div>
       </section>
-
     </main>
   );
 }

@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export default function hero() {
     return (
         <main>
-            <section id="home" className = "w-full h-screen bg-black items-center flex justify-center">
+            <section id="home" className = "w-full h-screen bg-[#121212] items-center flex justify-center z-10">
                 <div className="h-[581px] w-[1208.66px] absolute -z-0 scale-[0.35] md:scale-[0.45] lg:scale-[0.65] top-32">
                     <Image src="/hero/web.svg" alt="web" fill></Image>
                 </div>
