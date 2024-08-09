@@ -7,6 +7,7 @@ import {Button, ButtonGroup} from "@nextui-org/button";
 import { FlipWords } from "../ui/flip-words";
 import TypingAnimation from "@/components/magicui/typing-animation";
 import { TypeAnimation } from 'react-type-animation';
+import { BackgroundBeams } from "@/components/ui/backgroundbeams";
 
 
 export default function hero() {
@@ -14,21 +15,21 @@ export default function hero() {
     return (
         <section id="home" className = "w-full h-screen bg-[#121212] items-center flex justify-center z-10">
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-            <div className="h-[581px] w-[1208.66px] absolute -z-0 scale-[0.35] md:scale-[0.45] lg:scale-[0.65] top-32">
+            <div className="h-[581px] w-[1208.66px] absolute -z-0 scale-[0.35] md:scale-[0.45] lg:scale-[0.65] top-32 z-20">
                 <Image src="/hero/web.svg" alt="web" fill></Image>
             </div>
 
-            <div className="h-[293px] w-[1480px] absolute -z-0 mb-32 scale-[0.30] md:scale-[0.45] lg:scale-[0.65] top-56">
+            <div className="h-[293px] w-[1480px] absolute -z-0 mb-32 scale-[0.30] md:scale-[0.45] lg:scale-[0.65] top-56 z-20">
                 <Image src="/hero/island.svg" alt="island" fill></Image>
             </div>
 
-            <div className="container flex justify-center z-20 mt-24 md:mt-56 lg:mt-96">
+            <div className="container flex justify-center z-20 mt-24 md:mt-56 lg:mt-96 z-20">
                 <div className="space-y-6 justify-center">
                     <div className = "flex-row lg:space-y-4">
-                        <h1 className = "text-[36px] font-extrabold text-shadow-white text-center md:text-[56px] lg:text-[72px]">Design. Develop. <FlipWords words={words}/> </h1>
+                        <h1 className = "text-[36px] font-extrabold text-shadow-white text-center md:text-[56px] lg:text-[72px] text-glow">Design. Develop. <FlipWords words={words}/> </h1>
                         <div className = " items-center justify-center flex flex-col gap-2 lg:gap-2">
-                            <p className = "text-[24px] font-medium justify-center text-center lg:text-[32px]">I am <span>Muhammad Razan</span></p>
-                            <p className = "text-[18px] font-medium justify-center text-center lg:text-[24px]">A passionate <span>
+                            <p className = "text-[24px] font-bold justify-center text-center lg:text-[32px]">I am <span>Muhammad Razan</span></p>
+                            <p className = "text-[18px] font-thin justify-center text-center lg:text-[24px]">A passionate <span className="font-extrabold">
                                     <TypeAnimation sequence={[
                                         'UI/UX', // Types 'One'
                                         150, // Waits 2s
@@ -37,11 +38,11 @@ export default function hero() {
                                         '',
                                         1000,
                                         'Front-End', // Deletes 'One' and types 'Two'
-                                        150,
+                                        150, // wait 0.15 s
                                         'Front-End Developer',
-                                        3000,
+                                        3000, // wait 3s
                                         '',
-                                        1000, // Waits 2s
+                                        1000, // Waits 1s
                                         () => {
                                         console.log('Sequence completed');
                                         },
@@ -70,6 +71,7 @@ export default function hero() {
                     </div>
                 </div>
             </div>
+            <BackgroundBeams className="z-10 opacity-25"/>
         </section>
     )
 }
