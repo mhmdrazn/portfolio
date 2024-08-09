@@ -25,11 +25,11 @@ export default function navbar() {
     return (
         <div className='fixed flex flex-col z-50'>
             
-            <div className='bg-[#121212] bg-opacity-50 backdrop-blur-xl w-full px-6 py-3 flex flex-col items-left h-fit'>
+            <div className='bg-[#121212] bg-opacity-50 backdrop-blur-xl w-full px-8 py-5 flex flex-col items-left h-fit'>
                 <div className='flex items-center justify-between md:justify-between'>
 
-                    <div className='relative h-[30px] w-[30px]'>
-                        <Image src="/logo.svg" alt='logo' fill></Image>
+                    <div className='relative h-[25px] w-[25px]'>
+                        <Image src="/logo-z.png" alt='logo' fill></Image>
                     </div>
 
                     <div className='hidden md:flex gap-12 mr-[60px]'>

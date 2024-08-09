@@ -1,6 +1,12 @@
 import type { Config } from "tailwindcss";
 const {nextui} = require("@nextui-org/react");
 
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -26,22 +32,10 @@ const config: Config = {
         '800': '800ms',
         '1200': '1200ms',
       },
-      animation: {
-        ripple: "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
-      },
-      keyframes: {
-        ripple: {
-          "0%, 100%": {
-            transform: "translate(-50%, -50%) scale(1)",
-          },
-          "50%": {
-            transform: "translate(-50%, -50%) scale(0.9)",
-          },
-        },
-      },
     },
   },
   darkMode: "class",
+  
   plugins: [
       nextui({
         themes: {
@@ -81,7 +75,19 @@ const config: Config = {
             },
           },
         },
-      })
-  ],
+      }), addVariablesForColors
+  ], 
 };
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
+
 export default config;
