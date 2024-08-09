@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 
 import {Button, ButtonGroup} from "@nextui-org/button";
 import { FlipWords } from "../ui/flip-words";
+import TypingAnimation from "@/components/magicui/typing-animation";
+import { TypeAnimation } from 'react-type-animation';
 
 
 export default function hero() {
@@ -26,7 +28,31 @@ export default function hero() {
                         <h1 className = "text-[36px] font-extrabold text-shadow-white text-center md:text-[56px] lg:text-[72px]">Design. Develop. <FlipWords words={words}/> </h1>
                         <div className = " items-center justify-center flex flex-col gap-2 lg:gap-2">
                             <p className = "text-[24px] font-medium justify-center text-center lg:text-[32px]">I am <span>Muhammad Razan</span></p>
-                            <p className = "text-[18px] font-medium justify-center text-center lg:text-[24px]">A passionate UI/UX Designer</p>
+                            <p className = "text-[18px] font-medium justify-center text-center lg:text-[24px]">A passionate <span>
+                                    <TypeAnimation sequence={[
+                                        'UI/UX', // Types 'One'
+                                        150, // Waits 2s
+                                        'UI/UX Designer',
+                                        3000,
+                                        '',
+                                        1000,
+                                        'Front-End', // Deletes 'One' and types 'Two'
+                                        150,
+                                        'Front-End Developer',
+                                        3000,
+                                        '',
+                                        1000, // Waits 2s
+                                        () => {
+                                        console.log('Sequence completed');
+                                        },
+                                    ]}
+                                    wrapper="span"
+                                    cursor={true}
+                                    repeat={Infinity}
+                                    style={{ fontSize: '18px lg:24px', display: 'inline-block' }}
+                                    />
+                                </span> </p> 
+                            
                         </div>
                     </div>
 
