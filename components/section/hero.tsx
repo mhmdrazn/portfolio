@@ -3,8 +3,10 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 import {Button, ButtonGroup} from "@nextui-org/button";
+import { FlipWords } from "../ui/flip-words";
 
 export default function hero() {
+    const words = ["Delight", "Inspire", "Elevate"];
     return (
         <main>
             <section id="home" className = "w-full h-screen bg-[#121212] items-center flex justify-center z-10">
@@ -19,7 +21,7 @@ export default function hero() {
                 <div className="container flex justify-center z-20 mt-24 md:mt-56 lg:mt-96">
                     <div className="space-y-6 justify-center">
                         <div className = "flex-row lg:space-y-4">
-                            <h1 className = "text-[32px] font-extrabold text-shadow-white text-center md:text-[48px] lg:text-[64px]">Design. Develop. Delight</h1>
+                            <h1 className = "text-[36px] font-extrabold text-shadow-white text-center md:text-[56px] lg:text-[72px]">Design. Develop. <FlipWords words={words}/> </h1>
                             <div className = " items-center justify-center flex flex-col gap-2 lg:gap-2">
                                 <p className = "text-[18px] font-regular justify-center text-center lg:text-[24px]">I am <span>Muhammad Razan</span></p>
                                 <p className = "text-[16px] font-regular justify-center text-center lg:text-[24px]">A passionate UI/UX Designer</p>
