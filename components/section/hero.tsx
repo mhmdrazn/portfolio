@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
+import {Button, ButtonGroup} from "@nextui-org/button";
+
 export default function hero() {
     return (
         <main>
@@ -26,10 +28,14 @@ export default function hero() {
 
                         <div className="space-x-4 flex justify-center">
                             <Link href="https://drive.google.com/uc?export=download&id=1MTfq-1S3hDR8pdZ0bQFNoxDhGcc6zcin">
-                                <button className="w-32 px-[16px] py-[8px] rounded-[8px] bg-gradient-glass text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-normal" id="portfolio">Portfolio</button>
+                                <Button color="default" variant="flat" className="w-32 px-[16px] py-[8px]">
+                                    Portfolio
+                                </Button>
                             </Link>
                             <Link href="https://drive.google.com/uc?export=download&id=1_QeC48sM0Mtt9k8J0UGyCVvhDEdYoAeD">
-                                <button className="w-32 px-[16px] py-[8px] rounded-[8px] bg-gradient-glass text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-normal" id="cv">CV</button>
+                                <Button color="default" variant="flat" className="w-32 px-[16px] py-[8px]">
+                                    CV
+                                </Button>                            
                             </Link>
                         </div>
                     </div>

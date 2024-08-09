@@ -1,10 +1,12 @@
 import type { Config } from "tailwindcss";
+const {nextui} = require("@nextui-org/react");
 
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -39,6 +41,47 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [
+      nextui({
+        themes: {
+          "purple-dark": {
+            extend: "dark", // <- inherit default values from dark theme
+            colors: {
+              background: "#121212",
+              foreground: "#121212",
+              primary: {
+                50: "#121212",
+                100: "#121212",
+                200: "#121212",
+                300: "#121212",
+                400: "#121212",
+                500: "#121212",
+                600: "#121212",
+                700: "#121212",
+                800: "#121212",
+                900: "#121212",
+                DEFAULT: "#121212",
+                foreground: "#121212",
+              },
+              focus: "#121212",
+            },
+            layout: {
+              disabledOpacity: "0.3",
+              radius: {
+                small: "4px",
+                medium: "6px",
+                large: "8px",
+              },
+              borderWidth: {
+                small: "1px",
+                medium: "2px",
+                large: "3px",
+              },
+            },
+          },
+        },
+      })
+  ],
 };
 export default config;

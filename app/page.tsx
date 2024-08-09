@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from 'next/link';
 
-import Navbar from "@/components/navbar";
-import Hero from "@/components/hero";
-import ProjectSection from "@/components/projects";
-import Experience from "@/components/experience";
+import Navbar from "@/components/section/navbar";
+import Hero from "@/components/section/hero";
+import ProjectSection from "@/components/section/projects";
+import Experience from "@/components/section/experience";
 import Card from "@/components/molecules/contactCard";
 
 export default function Home() {
