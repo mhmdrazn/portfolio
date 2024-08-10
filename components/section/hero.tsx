@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 
 import {Button} from "@nextui-org/button";
 import { FlipWords } from "../ui/flip-words";
-import TypingAnimation from "@/components/magicui/typing-animation";
 import { TypeAnimation } from 'react-type-animation';
 import { BackgroundBeams } from "@/components/ui/backgroundbeams";
 

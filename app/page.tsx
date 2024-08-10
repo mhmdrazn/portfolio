@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import Navbar from "@/components/section/navbar";
 import Hero from "@/components/section/hero";
-import ProjectSection from "@/components/section/projects";
+import AboutMe from "@/components/section/aboutme";
 import Experience from "@/components/section/experience";
 import Card from "@/components/molecules/contactCard";
 import Tabs from "@/components/section/projects-tab";
@@ -14,10 +14,12 @@ export default function Home() {
     <main>
       <Navbar/>
       <Hero/>
+      <AboutMe/>
       <Experience/>
-      <ProjectSection/>
-      <Tabs />
-     
+      <section id="projects" className="lg:h-fit w-full items-center justify-center flex pt-28 pb-72">
+        <Tabs/>
+      </section>
+      
 
       {/* contacts */}
       <section id="contacts" className="w-full h-fit pt-[64px] py-[32px] flex-col flex mx-auto justify-center items-center bg-gradient-glass gap-6">

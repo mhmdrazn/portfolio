@@ -65,8 +65,8 @@ export default function TabsDemo() {
     ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col justify-center max-w-5xl mx-auto w-full items-start my-64 gap-12">
-      <h1 className="text-center font-extrabold text-[64px] text-[#7791FF]">My Projects</h1>
+    <div id="projects" className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col justify-center max-w-5xl mx-auto w-full items-start gap-9">
+      <h1 className="mx-auto justify-center items-center text-center font-extrabold text-[64px] bg-gradient-text text-transparent bg-clip-text">My Projects</h1>
       <Tabs tabs={tabs} />
     </div>
   );
@@ -140,20 +140,20 @@ const UrideImg = () => {
 
 const AimoImg = () => {
     return (
-        <div className="flex px-10 gap-40 h-[1500px] w-full justify-between">
-            <div className="flex flex-col gap-6">
+        <div className="flex px-10 gap-12 h-[1500px] w-full justify-between">
+            <div className="flex flex-col gap-6 max-w-[420px]">
                 <div className="relative h-[20px] w-[61.26px]">
                     <Image src="/projects/aimo.png" alt="aimo" fill></Image> 
                 </div>
-                <h1 className="font-bold max-w-[360px] text-[32px]">Empowering Mothers Against Postpartum Depression</h1>
-                <p className="font-thin text-[#999999] max-w-[460px] text-[14px] leading-6"> <span className="font-semibold">Aimo</span> is a mental health app designed to reduce the risk of postpartum depression (PPD) in expectant mothers. It offers literacy-based education, early prevention, and personalized post-birth guidance using the Edinburgh Postnatal Depression Scale (EPDS). Aimo ensures comprehensive support by involving husbands, family, friends, and healthcare professionals in assisting mothers experiencing PPD.</p>
+                <h1 className="font-bold max-w-[480px] text-[28px]">Empowering Mothers Against Postpartum Depression</h1>
+                <p className="font-thin text-[#999999] max-w-[410px] text-[14px] leading-6"> <span className="font-semibold">Aimo</span> is a mental health app designed to reduce the risk of postpartum depression (PPD) in expectant mothers. It offers literacy-based education, early prevention, and personalized post-birth guidance using the Edinburgh Postnatal Depression Scale (EPDS). Aimo ensures comprehensive support by involving husbands, family, friends, and healthcare professionals in assisting mothers experiencing PPD.</p>
                 <Link href="https://www.figma.com/proto/oa0GcifcAdurFxMFdaa3Bo/Aimo?node-id=233-2616&t=BCEM1VluA9MNekoN-1&scaling=contain&page-id=9%3A3&starting-point-node-id=233%3A2616">
                     <Button color="default" variant="flat" className="px-[32px] py-[8px] text-thin">
                         See Prototype
                     </Button>
                 </Link>
             </div>
-            <div className="relative h-[400px] w-[197.36px] rounded-3xl pt-4">
+            <div className="relative h-[400px] w-[374.1px] rounded-3xl pt-4">
                 <Image src="/projects/show-aimo.png" alt="showaimo" fill></Image>
             </div>
         </div>
