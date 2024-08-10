@@ -16,6 +16,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        "shine-pulse": {
+          "0%": {
+            "background-position": "0% 0%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
+          },
+          to: {
+            "background-position": "0% 0%",
+          },
+        },
+      },
       colors: {
         black: "#121212",
         green: "#60D07F",

@@ -7,6 +7,7 @@ import Hero from "@/components/section/hero";
 import ProjectSection from "@/components/section/projects";
 import Experience from "@/components/section/experience";
 import Card from "@/components/molecules/contactCard";
+import Tabs from "@/components/section/projects-tab";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero/>
       <Experience/>
       <ProjectSection/>
+      <Tabs />
      
 
       {/* contacts */}
