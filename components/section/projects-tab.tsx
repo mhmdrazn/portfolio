@@ -17,7 +17,7 @@ export default function TabsDemo() {
         value: "lokantara",
         content: (
             <ShineBorder 
-                className="w-[1000px] overflow-hidden relative h-[520px] p-10 text-xl md:text-4xl font-bold gap-4 justify-center"
+                className="lg:w-full md:w-fit overflow-hidden relative h-fit p-10 text-xl md:text-4xl font-bold gap-4 place-items-center"
                 color={["#7BC0FF"]}>
                 <LokaImg />
             </ShineBorder>
@@ -30,7 +30,7 @@ export default function TabsDemo() {
         value: "buangbijak",
         content: (
             <ShineBorder 
-                className="w-[1000px] overflow-hidden relative h-[520px] p-10 text-xl md:text-4xl font-bold gap-4 justify-center"
+                className="lg:w-full md:w-fit overflow-hidden relative h-fit p-10 text-xl md:text-4xl font-bold gap-4 place-items-center"
                 color={["#7BC0FF"]}>
                 <BuangbijakImg />
             </ShineBorder>
@@ -43,7 +43,7 @@ export default function TabsDemo() {
         value: "uride",
         content: (
             <ShineBorder 
-                className="w-[1000px] overflow-hidden relative h-[520px] p-10 text-xl md:text-4xl font-bold gap-4 justify-center"
+                className="lg:w-full md:w-fit overflow-hidden relative h-fit p-10 text-xl md:text-4xl font-bold gap-4 place-items-center"
                 color={["#7BC0FF"]}>
                 <UrideImg />
             </ShineBorder>
@@ -56,7 +56,7 @@ export default function TabsDemo() {
         value: "aimo",
         content: (
             <ShineBorder 
-                className="w-[1000px] overflow-hidden relative h-[520px] p-10 text-xl md:text-4xl font-bold gap-4 justify-center"
+                className="lg:w-full md:w-fit overflow-hidden relative h-fit p-10 text-xl md:text-4xl font-bold gap-4 place-items-center"
                 color={["#7BC0FF"]}>
                 <AimoImg />
             </ShineBorder>
@@ -67,49 +67,52 @@ export default function TabsDemo() {
   return (
     <div id="projects" className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col justify-center max-w-5xl mx-auto w-full items-start gap-9">
       <h1 className="mx-auto justify-center items-center text-center font-extrabold text-[64px] bg-gradient-text text-transparent bg-clip-text">My Projects</h1>
-      <Tabs tabs={tabs} />
+      <Tabs tabs={tabs} tabClassName="px-8"/>
     </div>
   );
 }
 
 const LokaImg = () => {
     return (
-        <div className="flex gap-12 h-[1500px] w-full justify-between">
+        <div className="flex flex-col lg:flex-row gap-12 h-fit w-fit justify-between place-items-center px-6 md:px-0 pb-3 md:pb-4 lg:pb-6">
+
             <div className="flex flex-col gap-6">
                 <div className="relative h-[20px] w-[105.2px]">
                     <Image src="/projects/loka.png" alt="loka" fill></Image> 
                 </div>
-                <h1 className="font-bold max-w-[320px] text-[32px]">Gateway to Unique Travel Experiences</h1>
-                <p className="font-thin text-[#999999] max-w-[470px] text-[14px] leading-6"><span className="font-semibold">Lokantara</span> offers a fresh perspective on Indonesia's diverse destinations, guiding travelers through iconic locations with interactive, gamified routes. The platform provides up-to-date information on tourist spots, cultural heritage, and local cuisine, promoting domestic tourism and fostering pride in Indonesia. With features like a translator, currency calculator, nearby friends, and one-click emergency assistance, Lokantara makes travel engaging and practical.</p>
+                <h1 className="font-bold max-w-[280px] md:max-w-[640px] lg:max-w-[480px] text-[28px] lg:text-[32px] leading-tight">Gateway to Unique Travel Experiences</h1>
+                <p className="text-justify font-thin text-[#999999] max-w-[280px] md:max-w-[640px] lg:max-w-[480px] text-[14px] leading-normal"><span className="font-semibold">Lokantara</span> offers a fresh perspective on Indonesia's diverse destinations, guiding travelers through iconic locations with interactive, gamified routes. The platform provides up-to-date information on tourist spots, cultural heritage, and local cuisine, promoting domestic tourism and fostering pride in Indonesia. With features like a translator, currency calculator, nearby friends, and one-click emergency assistance, Lokantara makes travel engaging and practical.</p>
                 <Link href="">
                     <Button color="default" variant="flat" className="px-[32px] py-[8px] text-thin">
                         See Prototype
                     </Button>
                 </Link>
             </div>
-            <div className="relative h-[400px] w-[325.43px] rounded-3xl pt-4">
+
+            <div className="relative h-[320px] w-[260.35px] md:h-[400px] md:w-[325.43px] rounded-3xl pt-4">
                 <Image src="/projects/show-lokantara.png" alt="showloka" fill></Image>
             </div>
+
         </div>
     )
 }
 
 const BuangbijakImg = () => {
     return (
-        <div className="flex gap-12 h-[1500px] w-full justify-between">
+        <div className="flex flex-col lg:flex-row gap-12 h-fit w-fit justify-between place-items-center px-6 md:px-0 pb-3 md:pb-4 lg:pb-6">
             <div className="flex flex-col gap-6">
                 <div className="relative h-[20px] w-[111.95px]">
                     <Image src="/projects/buangbijak.png" alt="loka" fill></Image> 
                 </div>
-                <h1 className="font-bold max-w-[320px] text-[32px]">Transforming Waste for a Cleaner Future</h1>
-                <p className="font-thin text-[#999999] max-w-[400px] text-[14px] leading-6"> <span className="font-semibold">BuangBijak</span> is a mobile app that promotes sustainable waste management by connecting users with recycling services and offering rewards for waste collection. The app provides an on-demand service for garbage collectors, making disposal efficient and accessible. It also features a platform for sharing or selling used items, encouraging a more sustainable and eco-friendly community.</p>
+                <h1 className="font-bold max-w-[280px] md:max-w-[640px] lg:max-w-[480px] text-[28px] lg:text-[32px] leading-tight">Transforming Waste for a Cleaner Future</h1>
+                <p className="text-justify font-thin text-[#999999] max-w-[300px] md:max-w-[640px] lg:max-w-[480px] text-[14px] leading-normal"> <span className="font-semibold">BuangBijak</span> is a mobile app that promotes sustainable waste management by connecting users with recycling services and offering rewards for waste collection. The app provides an on-demand service for garbage collectors, making disposal efficient and accessible. It also features a platform for sharing or selling used items, encouraging a more sustainable and eco-friendly community.</p>
                 <Link href="https://intip.in/PrototypeBuangBijak">
                     <Button color="default" variant="flat" className="px-[32px] py-[8px] text-thin">
                         See Prototype
                     </Button>
                 </Link>
             </div>
-            <div className="relative h-[400px] w-[413.53px] rounded-3xl pt-4">
+            <div className="relative h-[280px] w-[289.47px] md:h-[400px] md:w-[413.53px] rounded-3xl pt-4">
                 <Image src="/projects/show-buangbijak.png" alt="showloka" fill></Image>
             </div>
         </div>
@@ -118,20 +121,20 @@ const BuangbijakImg = () => {
 
 const UrideImg = () => {
     return (
-        <div className="flex gap-20 h-[1500px] w-full justify-between">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 h-fit w-fit justify-between place-items-center px-6 md:px-0 pb-3 md:pb-4 lg:pb-6">
             <div className="flex flex-col gap-6">
                 <div className="relative h-[20px] w-[58.22px]">
                     <Image src="/projects/uride.png" alt="uride" fill></Image> 
                 </div>
-                <h1 className="font-bold max-w-[360px] text-[32px]">Your On-Demand Vehicle Care Solution</h1>
-                <p className="font-thin text-[#999999] max-w-[460px] text-[14px] leading-6"> <span className="font-semibold">URide</span> URide tackles the challenges motor vehicle users in Indonesia face by offering on-demand repair services and vehicle health monitoring. The platform promotes routine maintenance awareness and provides access to skilled mechanics, ensuring safer and more reliable driving experiences. Additionally, URide supports workshop businesses with transparent pricing and quality repairs, offering a comprehensive solution for vehicle maintenance.</p>
+                <h1 className="font-bold max-w-[280px] md:max-w-[640px] lg:max-w-[480px] text-[24px] lg:text-[32px] leading-tight">Your On-Demand Vehicle Care Solution</h1>
+                <p className="text-justify font-thin text-[#999999] max-w-[300px] md:max-w-[640px] lg:max-w-[480px] text-[14px] leading-normal"> <span className="font-semibold">URide</span> URide tackles the challenges motor vehicle users in Indonesia face by offering on-demand repair services and vehicle health monitoring. The platform promotes routine maintenance awareness and provides access to skilled mechanics, ensuring safer and more reliable driving experiences. Additionally, URide supports workshop businesses with transparent pricing and quality repairs, offering a comprehensive solution for vehicle maintenance.</p>
                 <Link href="https://www.figma.com/proto/irgoRWbKsUTcinAQKS0K2D/URide?type=design&node-id=75-661&t=I4ODSpyIZ2bMxR9T-0&scaling=scale-down&page-id=75%3A661&starting-point-node-id=579%3A1668">
                     <Button color="default" variant="flat" className="px-[32px] py-[8px] text-thin">
                         See Prototype
                     </Button>
                 </Link>
             </div>
-            <div className="relative h-[412.5px] w-[275px] rounded-3xl pt-4">
+            <div className="relative h-[400px] w-[266.7px] md:h-[412.5px] md:w-[275px] rounded-3xl pt-4">
                 <Image src="/projects/show-uride.png" alt="showuride" fill></Image>
             </div>
         </div>
@@ -140,20 +143,20 @@ const UrideImg = () => {
 
 const AimoImg = () => {
     return (
-        <div className="flex px-10 gap-12 h-[1500px] w-full justify-between">
-            <div className="flex flex-col gap-6 max-w-[420px]">
-                <div className="relative h-[20px] w-[61.26px]">
-                    <Image src="/projects/aimo.png" alt="aimo" fill></Image> 
+        <div className="flex flex-col lg:flex-row gap-12 h-fit w-fit justify-between place-items-center px-6 md:px-0 pb-3 md:pb-4 lg:pb-12 lg:pt-4">
+            <div className="flex flex-col gap-6">
+                <div className="relative h-[20px] w-[111.95px]">
+                    <Image src="/projects/buangbijak.png" alt="loka" fill></Image> 
                 </div>
-                <h1 className="font-bold max-w-[480px] text-[28px]">Empowering Mothers Against Postpartum Depression</h1>
-                <p className="font-thin text-[#999999] max-w-[410px] text-[14px] leading-6"> <span className="font-semibold">Aimo</span> is a mental health app designed to reduce the risk of postpartum depression (PPD) in expectant mothers. It offers literacy-based education, early prevention, and personalized post-birth guidance using the Edinburgh Postnatal Depression Scale (EPDS). Aimo ensures comprehensive support by involving husbands, family, friends, and healthcare professionals in assisting mothers experiencing PPD.</p>
-                <Link href="https://www.figma.com/proto/oa0GcifcAdurFxMFdaa3Bo/Aimo?node-id=233-2616&t=BCEM1VluA9MNekoN-1&scaling=contain&page-id=9%3A3&starting-point-node-id=233%3A2616">
+                <h1 className="font-bold max-w-[280px] md:max-w-[640px] lg:max-w-[480px] text-[24px] lg:text-[32px] leading-tight">Empowering Mothers Against Postpartum Depression</h1>
+                <p className="text-justify font-thin text-[#999999] max-w-[300px] md:max-w-[640px] lg:max-w-[480px] text-[14px] leading-normal"> <span className="font-semibold">Aimo</span> is a mental health app designed to reduce the risk of postpartum depression (PPD) in expectant mothers. It offers literacy-based education, early prevention, and personalized post-birth guidance using the Edinburgh Postnatal Depression Scale (EPDS). Aimo ensures comprehensive support by involving husbands, family, friends, and healthcare professionals in assisting mothers experiencing PPD.</p>
+                <Link href="https://intip.in/PrototypeBuangBijak">
                     <Button color="default" variant="flat" className="px-[32px] py-[8px] text-thin">
                         See Prototype
                     </Button>
                 </Link>
             </div>
-            <div className="relative h-[400px] w-[374.1px] rounded-3xl pt-4">
+            <div className="relative h-[300px] w-[280.57px] md:h-[400px] md:w-[374.09px] rounded-3xl pt-4">
                 <Image src="/projects/show-aimo.png" alt="showaimo" fill></Image>
             </div>
         </div>

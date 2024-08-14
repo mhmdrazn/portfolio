@@ -14,9 +14,9 @@ export default function Home() {
     <main>
       <Navbar/>
       <Hero/>
-      <AboutMe/>
-      <Experience/>
-      <section id="projects" className="lg:h-fit w-full items-center justify-center flex pt-28 pb-72">
+      {/* <AboutMe/>
+      <Experience/> */}
+      <section id="projects" className="min-h-fit h-fit w-full items-center justify-center flex pt-28 pb-72">
         <Tabs/>
       </section>
       
