@@ -14,9 +14,9 @@ export default function Home() {
     <main>
       <Navbar/>
       <Hero/>
-      {/* <AboutMe/>
-      <Experience/> */}
-      <section id="projects" className="min-h-fit h-fit w-full items-center justify-center flex pt-28 pb-72">
+      <AboutMe/>
+      {/* <Experience/> */}
+      <section id="projects" className="flex flex-row mx-auto h-fit w-full items-center justify-center pt-24 pb-[920px] md:pt-20 md:pb-[560px] lg:pt-12 lg:pb-80">
         <Tabs/>
       </section>
       
@@ -73,11 +73,11 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex justify-center items-center gap-3">
+        <div className="flex justify-center items-center gap-2">
           <div className="w-[12px] h-[12px] md:h-[14px] md:w-[14px] relative place-content-center">
             <Image src="/c.svg" alt="c" fill></Image>
           </div>
-          <div className="text-[#696969] font-regular text-[14px] md:text-[16px]"> Muhammad Razan</div>
+          <div className="text-[#696969] font-regular text-[14px] md:text-[16px]">2024. Muhammad Razan</div>
         </div>
       </section>
     </main>

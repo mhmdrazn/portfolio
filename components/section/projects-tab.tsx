@@ -66,7 +66,7 @@ export default function TabsDemo() {
 
   return (
     <div id="projects" className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col justify-center max-w-5xl mx-auto w-full items-start gap-9">
-      <h1 className="mx-auto justify-center items-center text-center font-extrabold text-[64px] bg-gradient-text text-transparent bg-clip-text">My Projects</h1>
+      <h1 className="mx-auto justify-center items-center text-center font-extrabold text-[36px] md:text-[48px] lg:text-[64px] bg-gradient-text text-transparent bg-clip-text">My Projects</h1>
       <Tabs tabs={tabs} tabClassName="px-8"/>
     </div>
   );
@@ -74,7 +74,7 @@ export default function TabsDemo() {
 
 const LokaImg = () => {
     return (
-        <div className="flex flex-col lg:flex-row gap-12 h-fit w-fit justify-between place-items-center px-6 md:px-0 pb-3 md:pb-4 lg:pb-6">
+        <div className="flex flex-col lg:flex-row gap-12 h-fit w-fit justify-between place-items-center px-3 md:px-6 pb-3 md:pb-4 lg:pb-6">
 
             <div className="flex flex-col gap-6">
                 <div className="relative h-[20px] w-[105.2px]">
@@ -99,7 +99,7 @@ const LokaImg = () => {
 
 const BuangbijakImg = () => {
     return (
-        <div className="flex flex-col lg:flex-row gap-12 h-fit w-fit justify-between place-items-center px-6 md:px-0 pb-3 md:pb-4 lg:pb-6">
+        <div className="flex flex-col lg:flex-row gap-12 h-fit w-fit justify-between place-items-center px-3 md:px-6 pb-3 md:pb-4 lg:pb-6">
             <div className="flex flex-col gap-6">
                 <div className="relative h-[20px] w-[111.95px]">
                     <Image src="/projects/buangbijak.png" alt="loka" fill></Image> 
@@ -121,13 +121,13 @@ const BuangbijakImg = () => {
 
 const UrideImg = () => {
     return (
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 h-fit w-fit justify-between place-items-center px-6 md:px-0 pb-3 md:pb-4 lg:pb-6">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 h-fit w-fit justify-between place-items-center px-3 md:px-6 pb-3 md:pb-4 lg:pb-6">
             <div className="flex flex-col gap-6">
                 <div className="relative h-[20px] w-[58.22px]">
                     <Image src="/projects/uride.png" alt="uride" fill></Image> 
                 </div>
                 <h1 className="font-bold max-w-[280px] md:max-w-[640px] lg:max-w-[480px] text-[24px] lg:text-[32px] leading-tight">Your On-Demand Vehicle Care Solution</h1>
-                <p className="text-justify font-thin text-[#999999] max-w-[300px] md:max-w-[640px] lg:max-w-[480px] text-[14px] leading-normal"> <span className="font-semibold">URide</span> URide tackles the challenges motor vehicle users in Indonesia face by offering on-demand repair services and vehicle health monitoring. The platform promotes routine maintenance awareness and provides access to skilled mechanics, ensuring safer and more reliable driving experiences. Additionally, URide supports workshop businesses with transparent pricing and quality repairs, offering a comprehensive solution for vehicle maintenance.</p>
+                <p className="text-justify font-thin text-[#999999] max-w-[300px] md:max-w-[640px] lg:max-w-[480px] text-[14px] leading-normal"> <span className="font-semibold">URide</span> addresses challenges faced by motor vehicle users in Indonesia with on-demand repair services and vehicle health monitoring. The platform promotes maintenance awareness and connects users to skilled mechanics, ensuring safer driving. It also supports workshops with transparent pricing and quality repairs, offering a comprehensive vehicle maintenance solution.</p>
                 <Link href="https://www.figma.com/proto/irgoRWbKsUTcinAQKS0K2D/URide?type=design&node-id=75-661&t=I4ODSpyIZ2bMxR9T-0&scaling=scale-down&page-id=75%3A661&starting-point-node-id=579%3A1668">
                     <Button color="default" variant="flat" className="px-[32px] py-[8px] text-thin">
                         See Prototype
@@ -143,7 +143,7 @@ const UrideImg = () => {
 
 const AimoImg = () => {
     return (
-        <div className="flex flex-col lg:flex-row gap-12 h-fit w-fit justify-between place-items-center px-6 md:px-0 pb-3 md:pb-4 lg:pb-12 lg:pt-4">
+        <div className="flex flex-col lg:flex-row gap-12 h-fit w-fit justify-between place-items-center px-3 md:px-6 pb-3 md:pb-4 lg:pb-12 lg:pt-4">
             <div className="flex flex-col gap-6">
                 <div className="relative h-[20px] w-[111.95px]">
                     <Image src="/projects/buangbijak.png" alt="loka" fill></Image> 
