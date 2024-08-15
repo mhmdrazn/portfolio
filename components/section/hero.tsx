@@ -24,7 +24,7 @@ export default function hero() {
             <div className="container flex justify-center z-20 mt-24 md:mt-56 lg:mt-96">
                 <div className="space-y-6 justify-center">
                     <div className = "flex-row space-y-4 lg:space-y-4">
-                        <h1 className = "text-[32px] font-extrabold text-shadow-white text-center md:text-[56px] lg:text-[72px] text-glow">Design. Develop. <FlipWords words={words}/> </h1>
+                        <h1 className = "text-[32px] font-extrabold text-shadow-white text-center md:text-[56px] lg:text-[70px] text-glow">Design. Develop. <FlipWords words={words}/> </h1>
                         <div className = " items-center justify-center flex flex-col gap-0 lg:gap-2">
                             <p className = "text-[20px] font-bold justify-center text-center lg:text-[32px]">I am <span>Muhammad Razan</span></p>
                             <p className = "text-[16px] font-thin justify-center text-center lg:text-[24px]">A passionate <span className="font-extrabold">

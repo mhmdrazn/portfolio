@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import {Button} from "@nextui-org/button";
 
 import { div } from "three/webgpu";
 import { cn } from "@/lib/utils";
@@ -8,36 +9,72 @@ import { CardSpotlight } from "@/components/ui/card-spotlight";
 import { CardStack } from "../ui/card-stack";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import { grid, techStacks, techStacks2, techStacks3 } from "@/data";
+import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
 export default function aboutme() {
   return (
-    <div className="flex flex-col md:flex md:flex-row mx-auto justify-center items-center h-fit gap-12 md:py-20 bg-[#121212]">
-      <CardSpotlight className="h-fit lg:w-[480px] md:w-[420px] w-[380px] justify-center items-center rounded-2xl">
-        <p className="text-xl font-bold relative z-20 mt-2 text-white">
-        It is Me! 👋 
-        </p>
-        <div className="text-neutral-200 mt-4 relative z-20 font-thin">
-          Hello! I'm Muhammad <span className="bg-gradient-text text-transparent bg-clip-text font-extrabold"> Razan  </span>Parisya Putra, an Undergraduate Student. I have experienced 2+ years in UI/UX Design and a year of Front-End.
+    <div className="flex flex-col md:flex md:flex-row mx-auto justify-center items-center h-fit gap-32 md:py-20 bg-[#121212]">
+      <div className="flex flex-col md:flex-row md:flex justify-center items-center gap-6">
+
+        <div className="flex flex-col justify-center items-center gap-6 mt-36">
+          <CardContainer className="bg-slate-200 bg-opacity-5 h-48 rounded-2xl flex justify-end items-end">
+            <CardBody className="flex justify-end items-end h-fit bg-transparent bg-opacity-5 lg:w-[420px] md:w-[420px] w-[380px] rounded-xl">
+              <CardItem
+                translateZ="50"
+                className="w-[358.1px] h-[400px] relative flex flex-row justify-end"
+              >
+                <Image src="/aboutme/fotogw.png" alt='photo' fill></Image>
+              </CardItem>
+            </CardBody>
+          </CardContainer>
+          <CardSpotlight className="h-fit lg:w-[420px] md:w-[420px] w-[380px] justify-center flex flex-col items-center gap-4 rounded-xl">
+            <p className="text-xl font-bold relative z-20 text-white w-fit">
+            Start a project together? 🚀
+            </p>
+            <Link href="razan4944@gmail.com" className="flex justify-center items-center">
+              <Button color="default" variant="shadow" className="w-32 px-[16px] py-[8px]">
+                  Email me
+              </Button>
+            </Link>
+          </CardSpotlight>
         </div>
-        <p className="text-xl font-bold relative z-20 mt-8 mb-2 text-white">
-        Tech Stacks
-        </p>
-        <InfiniteMovingCards
-          items={techStacks}
-          direction="right"
-          speed="slow"
-        />
-        <InfiniteMovingCards
-          items={techStacks2}
-          direction="right"
-          speed="slow"
-        />
-        <InfiniteMovingCards
-          items={techStacks3}
-          direction="right"
-          speed="fast"
-        />
-      </CardSpotlight>
+        
+
+        <div className="flex flex-col justify-center items-center gap-6">
+          <CardSpotlight className="h-fit lg:w-[420px] md:w-[420px] w-[380px] justify-center items-center rounded-xl">
+            <p className="text-xl font-bold relative z-20 text-white">
+            It is Me! 👋 
+            </p>
+            <div className="text-neutral-200 mt-4 relative z-20 font-thin">
+              Hello! I'm Muhammad <span className="bg-gradient-text text-transparent bg-clip-text font-extrabold"> Razan  </span>Parisya Putra, an Undergraduate Student. I have experienced 2+ years in UI/UX Design and a year of Front-End.
+            </div>
+          </CardSpotlight>
+
+          <CardSpotlight className="h-fit lg:w-[420px] md:w-[420px] w-[380px] justify-center items-center rounded-xl">
+            <p className="text-xl font-bold relative z-20 mb-4 text-white">
+              Tech Stacks
+            </p>
+            <InfiniteMovingCards
+              items={techStacks}
+              direction="right"
+              speed="slow"
+            />
+            <InfiniteMovingCards
+              items={techStacks2}
+              direction="right"
+              speed="slow"
+            />
+            <InfiniteMovingCards
+              items={techStacks3}
+              direction="right"
+              speed="fast"
+            />
+          </CardSpotlight>
+        </div>
+      </div>
+      
+
+      
 
       <div className="flex flex-col gap-10 items-center justify-center w-fit">
         <div className="flex gap-5 items-center">  
