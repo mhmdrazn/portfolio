@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 type Tab = {
-  title: string | JSX.Element;
+  title: string;
   value: string;
   content?: string | React.ReactNode | any;
 };
@@ -40,19 +40,19 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "px-10 gap-4 flex flex-row h-[200px] items-center justify-between [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
           containerClassName
         )}
       >
         {propTabs.map((tab, idx) => (
           <button
-            key={tab.value}
+            key={tab.title}
             onClick={() => {
               moveSelectedTabToTop(idx);
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-8 py-4 rounded-full flex justify-center items-center", tabClassName)}
+            className={cn("relative px-4 py-2 rounded-full", tabClassName)}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -60,15 +60,15 @@ export const Tabs = ({
             {active.value === tab.value && (
               <motion.div
                 layoutId="clickedbutton"
-                transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
+                transition={{ type: "spring", bounce: 0.1, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-2xl",
+                  "absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-2xl ",
                   activeTabClassName
                 )}
               />
             )}
 
-            <span className="relative flex justify-center text-black dark:text-white">
+            <span className="relative block text-black dark:text-white">
               {tab.title}
             </span>
           </button>
@@ -79,7 +79,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-14", contentClassName)}
+        className={cn("mt-32", contentClassName)}
       />
     </>
   );
@@ -100,7 +100,7 @@ export const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative w-full h-full flex justify-center items-center">
+    <div className="relative w-full h-full">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}
@@ -114,7 +114,7 @@ export const FadeInDiv = ({
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
-          className={cn("w-full flex mx-auto h-full justify-center absolute top-0", className)}
+          className={cn("w-full h-full absolute top-0 left-0", className)}
         >
           {tab.content}
         </motion.div>
