@@ -1,138 +1,166 @@
+"use client";
+import React from "react";
+import { StickyScroll } from "../ui/sticky-scroll-reveal";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@nextui-org/button";
 
-export default function experience() {
+const content = [
+    {
+      title: 
+      <div className="flex flex-col gap-4">
+        <div className="flex gap-[24px]">
+            <div className="relative w-[34.05px] h-[52px] scale-80">
+                <Image src="/experience/betau.png" alt="betau" fill></Image>
+            </div>
+            <div className="text-[36px] font-bold self-center">Beta.U</div>
+        </div>
+        <div className="flex gap-8">
+          <div className="text-[16px] font-medium text-[#737373]">
+            UI/UX Designer
+          </div>
+          <div className="text-[16px] font-medium text-[#737373]">
+            Jun 24 - Present
+          </div>
+        </div>
+      </div>,
+      description:
+      <div className="flex flex-col gap-6">
+        At BETA U, a dynamic software house focused on swiftly and creatively transforming ideas into Minimum Viable Products (MVPs), I am responsible for crafting engaging user experiences and designing intuitive user interfaces that align perfectly with project goals. I work closely with front-end teams to ensure seamless integration and execution, bringing client visions to life through meticulous design and collaboration.
+        <Link href="https:/instagram.com/betafor.u">
+            <Button className="w-fit px-8 bg-gradient-glass">
+              <div className="h-[23px] w-fit">
+                  Go to page
+              </div>
+              <div className="relative self-center h-[15px] w-[15px]">
+                  <Image src="/export.svg" alt="export" fill></Image>
+              </div>
+            </Button>
+          </Link>
+      </div>,
+      content: (
+        <div className="h-fit text-center w-fit bg-[#121212] flex items-center relative justify-center">
+          {/* Soon Posted! <br />Haven't take a photos yet. Lol */}
+          <Image src="/experience/betaulogo.png" alt="betau" fill></Image>
+        </div>
+      ),  
+    },
+    {
+      title: 
+      <div className="flex flex-col gap-4">
+        <div className="flex gap-[24px]">
+            <div className="relative w-[59.66px] h-[52px] scale-80">
+                <Image src="/experience/ise.png" alt="ise" fill></Image>
+            </div>
+            <div className="text-[36px] font-bold self-center">ISE! 2024</div>
+        </div>
+        <div className="flex gap-8">
+          <div className="text-[16px] font-medium text-[#737373]">
+            UI/UX Designer
+          </div>
+          <div className="text-[16px] font-medium text-[#737373]">
+            Jun 24 - Present
+          </div>
+        </div>
+      </div>,
+      description:
+        <div className="flex flex-col gap-6">
+          Information Systems Expo (ISE!) is an annual event organized by the Information Systems Student. It comprises a series of events in the fields of information technology and business. ISE! aims to introduce the ITS Department of Information Systems to the broader community through various works and achievements.
+          <Link href="https:/ise-its.com">
+            <Button className="w-fit px-8 bg-gradient-glass">
+              <div className="h-[23px] w-fit">
+                  Go to page
+              </div>
+              <div className="relative self-center h-[15px] w-[15px]">
+                  <Image src="/export.svg" alt="export" fill></Image>
+              </div>
+            </Button>
+          </Link>
+        </div>,
+      content: (
+        <div className="h-[320px] text-center w-[480x] flex items-center relative justify-center">
+          {/* Soon Posted! <br />Haven't take a photos yet. Lol */}
+          <Image src="/experience/iselp.png" alt="iselp" fill></Image>
+        </div>
+      ),
+    },
+    {
+      title:
+        <div className="flex flex-col gap-4">
+          <div className="relative w-[186.47px] h-[35px]">
+              <Image src="/experience/tedx.svg" alt="tedx" fill></Image>
+          </div>
+          <div className="flex gap-8">
+            <div className="text-[16px] font-medium text-[#737373]">
+              UI/UX Designer
+            </div>
+            <div className="text-[16px] font-medium text-[#737373]">
+              Feb - Jul 24 
+            </div>
+          </div>  
+        </div>,
+      description:
+        <div className="flex flex-col gap-6">
+          TED, a non-profit organization founded in 1984, is renowned for its TED Talks, which cover a wide range of topics, from science and technology to personal growth. Through its mission to spread ideas that inspire positive change, TED has extended its influence globally, including through independently organized TEDx events. <br /> <br />TEDxITS 2024, specifically, is a significant event within the ITS community, designed to showcase and disseminate innovative and unexplored ideas. It aims to ignite meaningful discussions, foster connections among participants, and build a vibrant community around the shared pursuit of knowledge and innovation.
+          <Link href="https:/tedxits.org">
+            <Button className="w-fit px-8 bg-gradient-glass">
+              <div className="h-[23px] w-fit">
+                  Go to page
+              </div>
+              <div className="relative self-center h-[15px] w-[15px]">
+                  <Image src="/export.svg" alt="export" fill></Image>
+              </div>
+            </Button>
+          </Link>
+          
+        </div>,           
+      content: (
+        <div className="h-[320px] w-[480x] flex items-center relative justify-center">
+          <Image src="/experience/tedxmain.jpg" alt="tedxmainevent" fill></Image>
+        </div>
+      ),
+    },
+    {
+      title:
+      <div className="flex flex-col gap-4">
+        <div className="relative w-[149.7px] h-[72px]">
+            <Image src="/experience/ilits.png" alt="ilits" fill></Image>
+        </div>
+        <div className="flex gap-8">
+          <div className="text-[16px] font-medium text-[#737373]">
+            UI/UX Designer
+          </div>
+          <div className="text-[16px] font-medium text-[#737373]">
+            Oct 23 - Mar 24
+          </div>
+        </div>
+      </div>,
+      description:
+      <div className="flex flex-col gap-6">
+        Ini Lho ITS! 2024 is a dynamic initiative aimed at cultivating the enthusiasm of high school students, encouraging them to become integral members of the Sepuluh Nopember Institute of Technology (ITS) community. This engaging roadshow event is designed to provide an insightful introduction to the ITS campus, fostering the interest of prospective students in the academic offerings and vibrant campuss life at ITS.
+          <Link href="https:/inilho-its.ac.id">
+            <Button className="w-fit px-8 bg-gradient-glass">
+              <div className="h-[23px] w-fit">
+                  Go to page
+              </div>
+              <div className="relative self-center h-[15px] w-[15px]">
+                  <Image src="/export.svg" alt="export" fill></Image>
+              </div>
+            </Button>
+          </Link>
+      </div>,
+      content: (
+        <div className="h-[320px] w-[480x] flex items-center relative justify-center">
+          <Image src="/experience/ilits.jpg" alt="ilitsfarewell" fill></Image>
+        </div>
+      ),
+    },
+  ];
+
+  export default function StickyScrollRevealDemo() {
     return (
-        <main>
-            <section id="experiences" className="pt-[128px] pb-16 space-x-16 flex-col mx-auto justify-center items-center w-full">
-                <div className="space-x-16 flex mx-auto justify-center items-center">
-                <div className="relative w-[125px] h-[128.47px] drop-shadow-xl">
-                    <Image src="/cup.svg" alt="cup" fill></Image>
-                </div>
-                <div className="space-x-4">
-                    <h1 className="text-center font-bold text-[48px]"> Where Have I</h1>
-                    <h1 className="text-center font-extrabold text-[64px] text-[#7791FF]">Worked On?</h1>
-                    <p  className="text-center font-thin text-[16px]">Here is my some experience in related fields.</p>
-                </div>
-                <div className="w-[80px] h-[186.67px] drop-shadow-xl">
-                    <Image src="tumbler.svg" alt="tumbler" fill></Image>
-                </div>
-                </div>
-
-                <div className="flex-col">
-                {/* baris pertama */}
-                <div className="flex justify-center mx-auto pt-24 pb-4 gap-[32px]">
-                    <div className="job_container space-y-[32px]">
-                    <div className="flex space-between justify-between">
-                        <div className="flex gap-[24px]">
-                        <div className="relative w-[34.05px] h-[52px]">
-                            <Image src="/betau.png" alt="betau" fill></Image>
-                        </div>
-                        <div className="text-[24px] font-extrabold self-center">Beta.U</div>
-                        </div>  
-                        <div className="font-bold text-[20px] place-content-center">UI/UX Designer</div>
-                    </div>  
-                    <p className="font-normal text-[#ABABAB] w-[625px] text-justify pb-[32px]">
-                        <span className="font-medium text-white">BETA U </span>is a dynamic Software House specializing in transforming ideas into Minimum Viable Products (MVPs) swiftly and creatively. With a keen understanding of project intricacies, BETA U collaborates closely with clients to bring their visions to life. I am responsible to make a dynamic user experience and designing a user interface and ensure that all is correctively fits. As a designer, I am collaborate closely with Front end teams to achieve the product goals.
-                    </p>
-
-                    <Link href="https://www.instagram.com/betafor.u/">
-                        <button id="goto" className="flex place-content-center gap-2 px-[24px] py-[8px] rounded-[8px] bg-[#525252] text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-medium">
-                        <div className="h-[23px]">
-                            Go to page
-                        </div>
-                        <div className="relative self-center h-[15px] w-[15px]">
-                            <Image src="/export.svg" alt="export" fill></Image>
-                        </div>
-                        </button>
-                    </Link>
-                    </div>
-
-                    <div className="job_container space-y-[32px]">
-                    <div className="flex space-between justify-between">
-                        <div className="flex gap-[24px]">
-                        <div className="relative w-[59.66px] h-[52px]">
-                            <Image src="/ise.png" alt="ise" fill></Image>
-                        </div>
-                        <div className="text-[24px] font-extrabold self-center">ISE! 2024</div>
-                        </div>  
-                        <div className="font-bold text-[20px] place-content-center">UI/UX Designer</div>
-                    </div>  
-                    <p className="font-normal text-[#ABABAB] w-[625px] text-justify pb-[52px]">
-                        <span className="font-medium text-white">Information Systems Expo (ISE!)</span> is an annual event organized by the Information Systems Student Association (HMSI) of ITS. It comprises a series of events in the fields of information technology and business. ISE! aims to introduce the ITS Department of Information Systems to the broader community through various works and achievements
-                    </p>
-
-                    <Link href="https://www.ise-its.com/">
-                        <button id="goto" className="flex place-content-center gap-2 px-[24px] py-[8px] rounded-[8px] bg-[#525252] text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-medium">
-                        <div className="h-[23px]">
-                            Go to page
-                        </div>
-                        <div className="relative self-center h-[15px] w-[15px]">
-                            <Image src="/export.svg" alt="export" fill className="exportcolor"></Image>
-                        </div>
-                        </button>
-                    </Link>
-                    </div>
-                </div>
-
-                {/* baris kedua */}
-                <div className="flex justify-center mx-auto p-4 gap-[32px]"> 
-                    {/* TEDxITS */}
-                    <div className="job_container space-y-[32px]">
-                    <div className="flex space-between justify-between">
-                        <div className="flex gap-[24px] h-[52px]">
-                        <div className="relative w-[133.19px] h-[25px] self-center">
-                            <Image src="/tedx.svg" alt="tedx" fill></Image>
-                        </div>
-                        </div>  
-                        <div className="font-bold text-[20px] self-center">UI/UX Designer</div>
-                    </div>  
-                    <p className="font-normal text-[#ABABAB] w-[625px] text-justify pb-[56px]">
-                        <span className="font-medium text-white">TEDxITS </span>TEDxITS 2024 is an event that provides a platform for the community, especially those within the ITS environment, to share their intriguing ideas. The aim of this event is to spread ideas and concepts on new and unexplored topics. TEDxITS goal is to spark discussions, foster relationships, and build a sense of community.
-                    </p>
-
-                    <Link href="https://tedxits.org">
-                        <button id="goto" className="flex place-content-center gap-2 px-[24px] py-[8px] rounded-[8px] bg-[#525252] text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-medium">
-                        <div className="h-[23px]">
-                            Go to page
-                        </div>
-                        <div className="relative self-center h-[15px] w-[15px]">
-                            <Image src="/export.svg" alt="export" fill></Image>
-                        </div>
-                        </button>
-                    </Link>
-                    </div>
-
-                    {/* ILITS */}
-                    <div className="job_container space-y-[32px]">
-                    <div className="flex space-between justify-between">
-                        <div className="flex gap-[24px]">
-                        <div className="relative w-[108.12px] h-[52px]">
-                            <Image src="/ilits.png" alt="ilits" fill></Image>
-                        </div>
-                        </div>  
-                        <div className="font-bold text-[20px] place-content-center">UI/UX Designer</div>
-                    </div>  
-                    <p className="font-normal text-[#ABABAB] w-[625px] text-justify pb-[78px]">
-                        <span className="font-medium text-white">INI LHO ITS!</span> is a platform that integrates all elements of ITS to introduce ITS along with its academic and student life. It provides information about the faculties and departments at ITS while spreading the spirit of higher education to high school students across Indonesia and even the entire world.
-
-                    </p>
-
-                    <Link href="https://inilho.its.ac.id/">
-                        <button id="goto" className="flex place-content-center gap-2 px-[24px] py-[8px] rounded-[8px] bg-[#525252] text-[#ABABAB] hover:bg-[#999999] ease-in-out duration-400 hover:text-[#121212] font-medium">
-                        <div className="h-[23px]">
-                            Go to page
-                        </div>
-                        <div className="relative self-center h-[15px] w-[15px]">
-                            <Image src="/export.svg" alt="export" fill className="exportcolor"></Image>
-                        </div>
-                        </button>
-                    </Link>
-                    </div>
-                </div>
-                </div>
-            </section>
-
-        </main>
-    )
-}
+      <div>
+        <StickyScroll content={content} />
+      </div>
+    );
+  }

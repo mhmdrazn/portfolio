@@ -13,18 +13,18 @@ export default function hero() {
     const words = ["Delight", "Inspire", "Elevate"];
     return (
         <section id="home" className = "w-full h-screen bg-[#121212] items-center flex justify-center z-10">
-            <div className="h-[581px] w-[1208.66px] absolute scale-[0.35] md:scale-[0.45] lg:scale-[0.65] top-20 z-20">
+            <div className="h-[581px] w-[1208.66px] absolute scale-[0.32] md:scale-[0.45] lg:scale-[0.65] top-20 z-20">
                 <Image src="/hero/web.svg" alt="web" fill></Image>
             </div>
 
-            <div className="h-[293px] w-[1480px] absolute scale-[0.30] md:scale-[0.45] lg:scale-[0.65] top-56 z-20">
+            <div className="h-[293px] w-[1480px] absolute scale-[0.27] md:scale-[0.45] lg:scale-[0.65] top-56 z-20">
                 <Image src="/hero/island.svg" alt="island" fill></Image>
             </div>
 
             <div className="container flex justify-center z-20 mt-24 md:mt-56 lg:mt-96">
                 <div className="space-y-6 justify-center">
                     <div className = "flex-row space-y-4 lg:space-y-4">
-                        <h1 className = "text-[32px] font-extrabold text-shadow-white text-center md:text-[56px] lg:text-[70px] text-glow">Design. Develop. <FlipWords words={words}/> </h1>
+                        <h1 className = "text-[28px] font-extrabold text-shadow-white text-center md:text-[56px] lg:text-[70px] text-glow">Design. Develop. <FlipWords words={words}/> </h1>
                         <div className = " items-center justify-center flex flex-col gap-0 lg:gap-2">
                             <p className = "text-[20px] font-bold justify-center text-center lg:text-[32px]">I am <span>Muhammad Razan</span></p>
                             <p className = "text-[16px] font-thin justify-center text-center lg:text-[24px]">A passionate <span className="font-extrabold">
@@ -57,12 +57,12 @@ export default function hero() {
 
                     <div className="space-x-4 flex justify-center">
                         <Link href="https://drive.google.com/uc?export=download&id=1MTfq-1S3hDR8pdZ0bQFNoxDhGcc6zcin">
-                            <Button color="default" variant="flat" className="w-32 px-[16px] py-[8px]">
+                            <Button color="default" variant="shadow" className="w-32 px-[16px] py-[8px]">
                                 Portfolio
                             </Button>
                         </Link>
                         <Link href="https://drive.google.com/uc?export=download&id=1_QeC48sM0Mtt9k8J0UGyCVvhDEdYoAeD">
-                            <Button color="default" variant="flat" className="w-32 px-[16px] py-[8px]">
+                            <Button color="default" variant="ghost" className="w-32 px-[16px] py-[8px]">
                                 CV
                             </Button>                            
                         </Link>

@@ -13,12 +13,12 @@ import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
 export default function aboutme() {
   return (
-    <div className="flex flex-col md:flex md:flex-row mx-auto justify-center items-center h-fit gap-32 md:py-20 bg-[#121212]">
+    <div className="flex flex-col md:flex md:flex-col lg:flex lg:flex-row mx-auto justify-center items-center h-fit gap-20 md:py-20 ">
       <div className="flex flex-col md:flex-row md:flex justify-center items-center gap-6">
 
         <div className="flex flex-col justify-center items-center gap-6 mt-36">
           <CardContainer className="bg-slate-200 bg-opacity-5 h-48 rounded-2xl flex justify-end items-end">
-            <CardBody className="flex justify-end items-end h-fit bg-transparent bg-opacity-5 lg:w-[420px] md:w-[420px] w-[380px] rounded-xl">
+            <CardBody className="flex justify-end items-end h-fit bg-transparent bg-opacity-5 lg:w-[360px] md:w-[420px] w-[380px] rounded-xl">
               <CardItem
                 translateZ="50"
                 className="w-[358.1px] h-[400px] relative flex flex-row justify-end"
@@ -27,13 +27,13 @@ export default function aboutme() {
               </CardItem>
             </CardBody>
           </CardContainer>
-          <CardSpotlight className="h-fit lg:w-[420px] md:w-[420px] w-[380px] justify-center flex flex-col items-center gap-4 rounded-xl">
+          <CardSpotlight className="h-fit lg:w-[360px] md:w-[420px] w-[380px] justify-center flex flex-col items-center gap-4 rounded-xl">
             <p className="text-xl font-bold relative z-20 text-white w-fit">
             Start a project together? 🚀
             </p>
-            <Link href="razan4944@gmail.com" className="flex justify-center items-center">
+            <Link href="mailto:razan4944@gmail.com" className="flex justify-center items-center">
               <Button color="default" variant="shadow" className="w-32 px-[16px] py-[8px]">
-                  Email me
+                  Email Me!
               </Button>
             </Link>
           </CardSpotlight>
@@ -42,8 +42,8 @@ export default function aboutme() {
 
         <div className="flex flex-col justify-center items-center gap-6">
           <CardSpotlight className="h-fit lg:w-[420px] md:w-[420px] w-[380px] justify-center items-center rounded-xl">
-            <p className="text-xl font-bold relative z-20 text-white">
-            It is Me! 👋 
+            <p className="text-2xl font-bold relative z-20 text-white">
+            It's Me! 👋 
             </p>
             <div className="text-neutral-200 mt-4 relative z-20 font-thin">
               Hello! I'm Muhammad <span className="bg-gradient-text text-transparent bg-clip-text font-extrabold"> Razan  </span>Parisya Putra, an Undergraduate Student. I have experienced 2+ years in UI/UX Design and a year of Front-End.
@@ -51,7 +51,7 @@ export default function aboutme() {
           </CardSpotlight>
 
           <CardSpotlight className="h-fit lg:w-[420px] md:w-[420px] w-[380px] justify-center items-center rounded-xl">
-            <p className="text-xl font-bold relative z-20 mb-4 text-white">
+            <p className="text-2xl font-bold relative z-20 mb-4 text-white">
               Tech Stacks
             </p>
             <InfiniteMovingCards
@@ -73,9 +73,6 @@ export default function aboutme() {
         </div>
       </div>
       
-
-      
-
       <div className="flex flex-col gap-10 items-center justify-center w-fit">
         <div className="flex gap-5 items-center">  
           <p className="text-[#999999]">Discover me on</p>

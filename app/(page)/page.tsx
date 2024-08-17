@@ -11,22 +11,23 @@ import Tabs from "@/components/section/projects-tab";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-black">
       <Navbar/>
       <Hero/>
-      <AboutMe/>
-      {/* <Experience/> */}
-      <section id="projects" className="flex flex-row mx-auto h-fit w-full items-center justify-center pt-24 pb-[920px] md:pt-20 md:pb-[560px] lg:pt-12 lg:pb-80">
+      <section id="aboutme" className="pt-12 my-12 bg-black">
+        <AboutMe/>
+      </section>
+      <section id="experiences" className="my-6">
+        <Experience/>
+      </section>
+      <section id="projects" className="flex flex-row mx-auto bg-black h-fit w-full items-center justify-center pt-24 pb-[920px] md:pt-20 md:pb-[560px] lg:pt-12 lg:pb-80">
         <Tabs/>
       </section>
       
 
       {/* contacts */}
-      <section id="contacts" className="w-full h-fit pt-[64px] py-[32px] flex-col flex mx-auto justify-center items-center bg-gradient-glass gap-6">
-        
-
-        <h1 className="font-extrabold text-[32px] justfiy-center max-w-[360px] mx-auto items-center h-fit text-center mb-8 md:text-[36px] lg:text-[48px] md:max-w-[480px] lg:max-w-[640px]">Dive In below to explore our collaboration!</h1>
-        
+      <section id="contacts" className="w-full h-fit bg-neutral-900 pt-[64px] py-[32px] flex-col flex mx-auto justify-center items-center gap-6">
+        <h1 className="font-extrabold text-[32px] leading-tight justfiy-center max-w-[360px] mx-auto items-center h-fit text-center mb-8 md:text-[36px] lg:text-[48px] md:max-w-[480px] lg:max-w-[640px]">Dive In below to explore our collaboration!</h1>
         {/* baris pertama */}
         <div className="justify-center items-center mx-auto flex-col flex gap-6 xl:flex-row md:flex-col">
           {/* item pertama */}

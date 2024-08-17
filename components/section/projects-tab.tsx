@@ -65,7 +65,7 @@ export default function TabsDemo() {
     ];
 
   return (
-    <div id="projects" className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col justify-center max-w-5xl mx-auto w-full items-start gap-9">
+    <div id="projects" className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col justify-center max-w-5xl mx-auto w-full items-start gap-8">
       <h1 className="mx-auto justify-center items-center text-center font-extrabold text-[36px] md:text-[48px] lg:text-[64px] bg-gradient-text text-transparent bg-clip-text">My Projects</h1>
       <Tabs tabs={tabs} tabClassName="px-8"/>
     </div>
