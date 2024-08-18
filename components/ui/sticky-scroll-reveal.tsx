@@ -66,20 +66,20 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="lg:h-[45rem] md:h-[50rem] py-12 h-[45rem] no-visible-scrollbar overflow-y-auto lg:flex justify-center relative space-x-10 rounded-md lg:p-12 md:p-20 p-12"
+      className="lg:h-[45rem] md:h-[50rem] h-[55rem] no-visible-scrollbar overflow-y-auto lg:flex justify-center relative md:space-x-10 rounded-md lg:p-12 md:p-16 p-8 py-2 pt-20"
       ref={ref}
     >
-      <h1 className="lg:hidden h-fit md:h-fit w-fit font-bold md:text-[56px] text-[42px] sticky top-0 lg:leading-tight md:leading-none leading-none flex lg:items-center text-left ">
+      <h1 className="lg:hidden flex h-fit md:h-fit w-fit font-bold md:text-[56px] text-[42px] sticky top-0 lg:leading-tight md:leading-none leading-none lg:items-center text-left ">
         My Career and <br /> Expertise Journey.
       </h1>
-      <h1 className="sm:hidden lg:block h-full w-fit font-bold text-[56px] sticky flex top-0 lg:leading-tight items-center text-left">
+      <h1 className="hidden lg:flex h-full w-fit font-bold text-[56px] sticky top-0 lg:leading-tight items-center text-left">
         My Career <br /> and Expertise <br /> Journey.
       </h1>
       <div className="div relative flex lg:items-start md:items-center justify-center md:p-12 py-20">
         <div className="max-w-2xl">
           <div className="lg:h-20 sm:h-20"/>
             {content.map((item, index) => (
-              <div key={item.title + index} className="lg:m-8 md:m-2">
+              <div key={item.title + index} className="lg:m-8 md:m-2 m-1">
                 <motion.h2
                   initial={{
                     opacity: 0,
@@ -98,19 +98,19 @@ export const StickyScroll = ({
                   animate={{
                     opacity: activeCard === index ? 1 : 0.2,
                   }}
-                  className="text-md text-[#ABABAB] lg:max-w-lg md:max-w-full text-justify lg:pb-20 lg:mt-5 md:mt-10 md:pb-28 mt-5 pb-24"
+                  className="text-md text-[#ABABAB] lg:max-w-lg md:max-w-full text-justify lg:pb-20 lg:mt-5 md:mt-10 md:pb-28 mt-5 pb-16"
                 >
                   {item.description}
                 </motion.div>
               </div>
             ))}
-            <div className="h-16 md:h-0 lg:h-12"/>
+            <div className="h-2 md:h-0 lg:h-12"/>
           </div>
         </div>
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "lg:block md:hidden h-[320px] w-[480px] rounded-3xl sticky top-40 overflow-hidden md:bg-cover items-center",
+          "lg:block hidden h-[320px] w-[480px] rounded-3xl sticky top-40 overflow-hidden md:bg-cover items-center",
           contentClassName
         )}
       >

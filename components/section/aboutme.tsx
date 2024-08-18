@@ -13,7 +13,7 @@ import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
 export default function aboutme() {
   return (
-    <div className="flex flex-col md:flex md:flex-col lg:flex lg:flex-row mx-auto justify-center items-center h-fit gap-20 md:py-20 ">
+    <div className="flex flex-col md:flex md:flex-col lg:flex lg:flex-row mx-auto justify-center items-center h-fit gap-20 md:py-20 py-24">
       <div className="flex flex-col md:flex-row md:flex justify-center items-center gap-6">
 
         <div className="flex flex-col justify-center items-center gap-6 mt-36">
