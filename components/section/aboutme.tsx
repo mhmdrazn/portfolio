@@ -11,7 +11,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import { grid, techStacks, techStacks2, techStacks3 } from "@/data";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
-export default function aboutme() {
+export default function Aboutme() {
   return (
     <div className="flex flex-col md:flex md:flex-col lg:flex lg:flex-row mx-auto justify-center items-center h-fit gap-20 md:py-20 py-24">
       <div className="flex flex-col md:flex-row md:flex justify-center items-center gap-6">
@@ -43,10 +43,10 @@ export default function aboutme() {
         <div className="flex flex-col justify-center items-center gap-6">
           <CardSpotlight className="h-fit lg:w-[420px] md:w-[420px] w-[380px] justify-center items-center rounded-xl">
             <p className="text-2xl font-bold relative z-20 text-white">
-            It's Me! 👋 
+            It is Me! 👋 
             </p>
             <div className="text-neutral-200 mt-4 relative z-20 font-thin">
-              Hello! I'm Muhammad <span className="bg-gradient-text text-transparent bg-clip-text font-extrabold"> Razan  </span>Parisya Putra, an Undergraduate Student. I have experienced 2+ years in UI/UX Design and a year of Front-End.
+              Hello! I am Muhammad <span className="bg-gradient-text text-transparent bg-clip-text font-extrabold"> Razan  </span>Parisya Putra, an Undergraduate Student. I have experienced 2+ years in UI/UX Design and a year of Front-End.
             </div>
           </CardSpotlight>
 
@@ -60,12 +60,12 @@ export default function aboutme() {
               speed="slow"
             />
             <InfiniteMovingCards
-              items={techStacks2}
+              itemS={techStacks2}
               direction="right"
               speed="slow"
             />
             <InfiniteMovingCards
-              items={techStacks3}
+              itemS={techStacks3}
               direction="right"
               speed="fast"
             />
