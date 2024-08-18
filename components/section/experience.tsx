@@ -39,9 +39,9 @@ const content = [
           </Link>
       </div>,
       content: (
-        <div className="h-fit text-center w-fit bg-[#121212] flex items-center relative justify-center">
+        <div className="h-[320px] w-[480px] bg-[#121212] flex items-center relative justify-center">
           {/* Soon Posted! <br />Haven't take a photos yet. Lol */}
-          <Image src="/experience/betaulogo.png" alt="betau" fill></Image>
+          <Image src="/experience/betayu.svg" alt="betaulp" fill></Image>
         </div>
       ),  
     },
@@ -65,7 +65,7 @@ const content = [
       </div>,
       description:
         <div className="flex flex-col gap-6">
-          Information Systems Expo (ISE!) is an annual event organized by the Information Systems Student. It comprises a series of events in the fields of information technology and business. ISE! aims to introduce the ITS Department of Information Systems to the broader community through various works and achievements.
+          Information Systems Expo (ISE!) is an annual event organized by the Information Systems Student. It comprises a series of events in the fields of information technology and business. ISE! aims to introduce the ITS Department of Information Systems to the broader community through various works and achievements. <br /><br />Designing ISE! Website 2024 and collaborate with the creative team and understand the ISE! 2024 event series as a whole. My responsibilities include creating visually appealing user interfaces and developing seamless and intuitive user experiences. I collaborate closely with cross-functional teams to ensure our digital products adhere to the highest standards of design and usability, thereby increasing user satisfaction and engagement.
           <Link href="https:/ise-its.com">
             <Button className="w-fit px-8 bg-gradient-glass">
               <div className="h-[23px] w-fit">
@@ -80,7 +80,7 @@ const content = [
       content: (
         <div className="h-[320px] text-center w-[480x] flex items-center relative justify-center">
           {/* Soon Posted! <br />Haven't take a photos yet. Lol */}
-          <Image src="/experience/iselp.png" alt="iselp" fill></Image>
+          <Image src="/experience/iselp.svg" alt="iselp" fill></Image>
         </div>
       ),
     },
@@ -101,7 +101,7 @@ const content = [
         </div>,
       description:
         <div className="flex flex-col gap-6">
-          TED, a non-profit organization founded in 1984, is renowned for its TED Talks, which cover a wide range of topics, from science and technology to personal growth. Through its mission to spread ideas that inspire positive change, TED has extended its influence globally, including through independently organized TEDx events. <br /> <br />TEDxITS 2024, specifically, is a significant event within the ITS community, designed to showcase and disseminate innovative and unexplored ideas. It aims to ignite meaningful discussions, foster connections among participants, and build a vibrant community around the shared pursuit of knowledge and innovation.
+          TEDxITS 2024, specifically, is a significant event within the ITS community, designed to showcase and disseminate innovative and unexplored ideas. It aims to ignite meaningful discussions, foster connections among participants, and build a vibrant community around the shared pursuit of knowledge and innovation. <br /><br />Collaborated closely with visual designers to develop the user interface of TEDxITS website, ensuring a seamless integration of design elements and functionality. Played a key role in the creation of all interface designs, established the fundamental framework of the website, and meticulously crafted the user interaction flow from inception to fruition.
           <Link href="https:/tedxits.org">
             <Button className="w-fit px-8 bg-gradient-glass">
               <div className="h-[23px] w-fit">
@@ -137,8 +137,8 @@ const content = [
       </div>,
       description:
       <div className="flex flex-col gap-6">
-        Ini Lho ITS! 2024 is a dynamic initiative aimed at cultivating the enthusiasm of high school students, encouraging them to become integral members of the Sepuluh Nopember Institute of Technology (ITS) community. This engaging roadshow event is designed to provide an insightful introduction to the ITS campus, fostering the interest of prospective students in the academic offerings and vibrant campuss life at ITS.
-          <Link href="https:/inilho-its.ac.id">
+        Ini Lho ITS! 2024 is a dynamic initiative aimed at cultivating the enthusiasm of high school students, encouraging them to become integral members of the Sepuluh Nopember Institute of Technology (ITS) community. This engaging roadshow event is designed to provide an insightful introduction to the ITS campus, fostering the interest of prospective students in the academic offerings and vibrant campuss life at ITS. <br /><br />Responsible for the design and development of the Ini Lho ITS! 2024 website. Included creating all of the interface designs, designing the basic framework of the website, and creating a flow of website user interaction from start to finish.
+          <Link href="https://inilho.its.ac.id/">
             <Button className="w-fit px-8 bg-gradient-glass">
               <div className="h-[23px] w-fit">
                   Go to page
