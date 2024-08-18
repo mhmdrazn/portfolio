@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 type Tab = {
-  title: string;
+  title: JSX.Element;
   value: string;
   content?: string | React.ReactNode | any;
 };
@@ -17,7 +17,7 @@ export const Tabs = ({
   tabClassName,
   contentClassName,
 }: {
-  tabs: Tab[] | any;
+  tabs: Tab[];
   containerClassName?: string;
   activeTabClassName?: string;
   tabClassName?: string;
@@ -46,7 +46,7 @@ export const Tabs = ({
       >
         {propTabs.map((tab, idx) => (
           <button
-            key={tab.title}
+            key={tab.value}
             onClick={() => {
               moveSelectedTabToTop(idx);
             }}
