@@ -38,7 +38,7 @@ export const FlipWords = ({
       <motion.div
         initial={{
           opacity: 0,
-          y: 10,
+          y: 5,
         }}
         animate={{
           opacity: 1,
@@ -51,8 +51,8 @@ export const FlipWords = ({
         }}
         exit={{
           opacity: 0,
-          y: -40,
-          x: 40,
+          y: -2,
+          x: 2,
           filter: "blur(8px)",
           scale: 2,
           position: "absolute",
