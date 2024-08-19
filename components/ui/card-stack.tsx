@@ -15,7 +15,7 @@ export const CardStack = ({
   offset,
   scaleFactor,
 }: {
-  items: Card[];
+  items: Card[] | any;
   offset?: number;
   scaleFactor?: number;
 }) => {

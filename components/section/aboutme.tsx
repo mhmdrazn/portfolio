@@ -60,12 +60,12 @@ export default function Aboutme() {
               speed="slow"
             />
             <InfiniteMovingCards
-              itemS={techStacks2}
+              items={techStacks2}
               direction="right"
               speed="slow"
             />
             <InfiniteMovingCards
-              itemS={techStacks3}
+              items={techStacks3}
               direction="right"
               speed="fast"
             />
