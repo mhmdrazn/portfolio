@@ -14,23 +14,22 @@ export default function Home() {
     <main className="bg-black">
       <Navbar/>
       <Hero/>
-      <section id="aboutme" className="pt-12 my-12 bg-black">
+      <section id="aboutme" className="pt-12 my-12 bg-black relative justify-start flex overflow-hidden">
         <AboutMe/>
       </section>
-      <section id="experiences" className="my-2 py-2">
+      {/* <section id="experiences" className="my-2 py-2">
         <Experience/>
       </section>
       <section id="projects" className="flex flex-row mx-auto bg-black h-fit w-full items-center justify-center pt-24 pb-[920px] md:pt-20 md:pb-[560px] lg:pt-12 lg:pb-80">
         <Tabs/>
-      </section>
+      </section> */}
       
 
       {/* contacts */}
-      <section id="contacts" className="w-full h-fit bg-neutral-900 pt-[64px] py-[32px] flex-col flex mx-auto justify-center items-center gap-6">
+      
+      {/* <section id="contacts" className="w-full h-fit bg-neutral-900 pt-[64px] py-[32px] flex-col flex mx-auto justify-center items-center gap-6">
         <h1 className="font-extrabold text-[32px] leading-tight justfiy-center max-w-[360px] mx-auto items-center h-fit text-center mb-8 md:text-[36px] lg:text-[48px] md:max-w-[480px] lg:max-w-[640px]">Dive In below to explore our collaboration!</h1>
-        {/* baris pertama */}
         <div className="justify-center items-center mx-auto flex-col flex gap-6 xl:flex-row md:flex-col">
-          {/* item pertama */}
           <Card
             href="https://github.com/mhmdrazn"
             img="/contacts/github.png"
@@ -56,9 +55,7 @@ export default function Home() {
           
         </div>
 
-        {/* baris kedua */}
         <div className="justify-center items-center mx-auto flex-col flex mb-8 gap-6 md:flex-row">
-          {/* item pertama */}
           <Card
             href="https://www.dribbble.com/mhmdrazn/"
             img="/contacts/dribbble.png"
@@ -80,7 +77,8 @@ export default function Home() {
           </div>
           <div className="text-[#696969] font-regular text-[14px] md:text-[16px]">2024. Muhammad Razan</div>
         </div>
-      </section>
+      </section> */}
+      
     </main>
   );
 }
