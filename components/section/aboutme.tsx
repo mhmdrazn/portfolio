@@ -16,7 +16,7 @@ export default function Aboutme() {
     <div className="flex flex-col lg:flex-row justify-center items-center h-fit md:gap-20 gap-10 md:py-20 py-24 w-fit md:mt-0 mx-auto">
       <div className="flex flex-col md:flex md:flex-row gap-6 h-fit md:w-full w-screen justify-center mx-auto relative items-end">
 
-        <div className="flex flex-col justify-center gap-6 relative md:px-0 w-full max-w-[360px]  mx-auto md:w-[480px]">
+        <div className="flex flex-col justify-center gap-6 relative md:px-0 w-full max-w-[320px] mx-auto md:w-[480px]">
 
           <CardContainer className="bg-slate-200 bg-opacity-5 h-48 rounded-2xl flex justify-center items-end w-full mx-auto">
             <CardBody className="flex justify-end items-end h-fit bg-transparent bg-opacity-5 w-fit rounded-xl">
@@ -54,7 +54,7 @@ export default function Aboutme() {
         </div>
         
 
-        <div className="flex flex-col justify-center gap-6 relative md:px-0 w-full max-w-[360px] md:max-w-full mx-auto md:w-[480px]">
+        <div className="flex flex-col justify-center gap-6 relative md:px-0 w-full max-w-[320px] md:max-w-full mx-auto md:w-[480px]">
 
           <CardSpotlight className="rounded-xl">
             <p className="md:text-2xl text-md font-bold relative z-20 text-white">
