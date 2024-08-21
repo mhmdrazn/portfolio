@@ -17,7 +17,7 @@ export default function Home() {
       <section id="aboutme" className="bg-black relative justify-start flex overflow-hidden">
         <AboutMe/>
       </section>
-      <section id="experiences" className="my-2 py-2">
+      <section id="experiences">
         <Experience/>
       </section>
       {/* <section id="projects" className="flex flex-row mx-auto bg-black h-fit w-full items-center justify-center pt-24 pb-[920px] md:pt-20 md:pb-[560px] lg:pt-12 lg:pb-80">

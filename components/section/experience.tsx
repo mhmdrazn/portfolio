@@ -25,7 +25,7 @@ const content = [
         </div>
       </div>,
       description:
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 text-sm leading-relaxed font-light md:text-base">
         At BETA U, a dynamic software house focused on swiftly and creatively transforming ideas into Minimum Viable Products (MVPs), I am responsible for crafting engaging user experiences and designing intuitive user interfaces that align perfectly with project goals. I work closely with front-end teams to ensure seamless integration and execution, bringing client visions to life through meticulous design and collaboration.
         <Link href="https:/instagram.com/betafor.u">
             <Button className="w-fit px-8 bg-gradient-glass">
@@ -64,7 +64,7 @@ const content = [
         </div>
       </div>,
       description:
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 text-sm leading-relaxed font-light md:text-base">
           Information Systems Expo (ISE!) is an annual event organized by the Information Systems Student. It comprises a series of events in the fields of information technology and business. ISE! aims to introduce the ITS Department of Information Systems to the broader community through various works and achievements. <br /><br />Designing ISE! Website 2024 and collaborate with the creative team and understand the ISE! 2024 event series as a whole. My responsibilities include creating visually appealing user interfaces and developing seamless and intuitive user experiences. I collaborate closely with cross-functional teams to ensure our digital products adhere to the highest standards of design and usability, thereby increasing user satisfaction and engagement.
           <Link href="https:/ise-its.com">
             <Button className="w-fit px-8 bg-gradient-glass">
@@ -100,7 +100,7 @@ const content = [
           </div>  
         </div>,
       description:
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 text-sm leading-relaxed font-light md:text-base">
           TEDxITS 2024, specifically, is a significant event within the ITS community, designed to showcase and disseminate innovative and unexplored ideas. It aims to ignite meaningful discussions, foster connections among participants, and build a vibrant community around the shared pursuit of knowledge and innovation. <br /><br />Collaborated closely with visual designers to develop the user interface of TEDxITS website, ensuring a seamless integration of design elements and functionality. Played a key role in the creation of all interface designs, established the fundamental framework of the website, and meticulously crafted the user interaction flow from inception to fruition.
           <Link href="https:/tedxits.org">
             <Button className="w-fit px-8 bg-gradient-glass">
@@ -136,7 +136,7 @@ const content = [
         </div>
       </div>,
       description:
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 text-sm leading-relaxed font-light md:text-base">
         Ini Lho ITS! 2024 is a dynamic initiative aimed at cultivating the enthusiasm of high school students, encouraging them to become integral members of the Sepuluh Nopember Institute of Technology (ITS) community. This engaging roadshow event is designed to provide an insightful introduction to the ITS campus, fostering the interest of prospective students in the academic offerings and vibrant campuss life at ITS. <br /><br />Responsible for the design and development of the Ini Lho ITS! 2024 website. Included creating all of the interface designs, designing the basic framework of the website, and creating a flow of website user interaction from start to finish.
           <Link href="https://inilho.its.ac.id/">
             <Button className="w-fit px-8 bg-gradient-glass">
