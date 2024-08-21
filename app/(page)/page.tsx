@@ -20,9 +20,9 @@ export default function Home() {
       <section id="experiences">
         <Experience/>
       </section>
-      {/* <section id="projects" className="flex flex-row mx-auto bg-black h-fit w-full items-center justify-center pt-24 pb-[920px] md:pt-20 md:pb-[560px] lg:pt-12 lg:pb-80">
+      <section id="projects" className="flex flex-row mx-auto bg-black h-fit w-full items-center justify-center pt-10 pb-[920px] md:pt-20 md:pb-[560px] lg:pt-12 lg:pb-80">
         <Tabs/>
-      </section> */}
+      </section>
       
 
       {/* contacts */}
