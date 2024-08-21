@@ -13,23 +13,25 @@ export default function Home() {
   return (
     <main className="bg-black">
       <Navbar/>
-      <Hero/>
+      <section className="overflow-hidden">
+        <Hero/>
+      </section>
       <section id="aboutme" className="bg-black relative justify-start flex overflow-hidden">
         <AboutMe/>
       </section>
       <section id="experiences">
         <Experience/>
       </section>
-      <section id="projects" className="flex flex-row mx-auto bg-black h-fit w-full items-center justify-center pt-10 pb-[920px] md:pt-20 md:pb-[560px] lg:pt-16 lg:pb-80 overflow-hidden">
+      <section id="projects" className="flex flex-row mx-auto bg-black h-fit w-full items-center justify-center pt-10 pb-[940px] md:pt-20 md:pb-[560px] lg:pt-16 lg:pb-80 overflow-hidden">
         <Tabs/>
       </section>
       
 
-      {/* contacts */}
+      {/* section contacts */}
       
-      {/* <section id="contacts" className="w-full h-fit bg-neutral-900 pt-[64px] py-[32px] flex-col flex mx-auto justify-center items-center gap-6">
-        <h1 className="font-extrabold text-[32px] leading-tight justfiy-center max-w-[360px] mx-auto items-center h-fit text-center mb-8 md:text-[36px] lg:text-[48px] md:max-w-[480px] lg:max-w-[640px]">Dive In below to explore our collaboration!</h1>
-        <div className="justify-center items-center mx-auto flex-col flex gap-6 xl:flex-row md:flex-col">
+      <section id="contacts" className="w-full h-fit bg-neutral-900 pt-[64px] py-[32px] px-6 flex-col flex mx-auto justify-center items-center gap-6 overflow-hidden">
+        <h1 className="font-extrabold text-[1.5rem] leading-tight justfiy-center max-w-[360px] mx-auto items-center h-fit text-center mb-8 md:text-[36px] lg:text-[48px] md:max-w-[480px] lg:max-w-[640px] overflow-hidden">Dive In below to explore our collaboration!</h1>
+        <div className="justify-center items-center mx-auto flex-col flex gap-6 xl:flex-row md:flex-col overflow-hidden">
           <Card
             href="https://github.com/mhmdrazn"
             img="/contacts/github.png"
@@ -77,7 +79,7 @@ export default function Home() {
           </div>
           <div className="text-[#696969] font-regular text-[14px] md:text-[16px]">2024. Muhammad Razan</div>
         </div>
-      </section> */}
+      </section>
       
     </main>
   );
