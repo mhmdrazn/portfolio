@@ -14,13 +14,13 @@ export default function Home() {
     <main className="bg-black">
       <Navbar/>
       <Hero/>
-      <section id="aboutme" className="pt-12 my-12 bg-black relative justify-start flex overflow-hidden">
+      <section id="aboutme" className="bg-black relative justify-start flex overflow-hidden">
         <AboutMe/>
       </section>
-      {/* <section id="experiences" className="my-2 py-2">
+      <section id="experiences" className="my-2 py-2">
         <Experience/>
       </section>
-      <section id="projects" className="flex flex-row mx-auto bg-black h-fit w-full items-center justify-center pt-24 pb-[920px] md:pt-20 md:pb-[560px] lg:pt-12 lg:pb-80">
+      {/* <section id="projects" className="flex flex-row mx-auto bg-black h-fit w-full items-center justify-center pt-24 pb-[920px] md:pt-20 md:pb-[560px] lg:pt-12 lg:pb-80">
         <Tabs/>
       </section> */}
       
