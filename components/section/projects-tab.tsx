@@ -67,7 +67,7 @@ export default function TabsDemo() {
   return (
     <div id="projects" className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col justify-center max-w-5xl mx-auto w-full items-start gap-4">
       <h1 className="mx-auto justify-center items-center text-center font-extrabold text-[36px] md:text-[48px] lg:text-[64px] bg-gradient-text text-transparent bg-clip-text">My Projects</h1>
-      <Tabs tabs={tabs} tabClassName="px-8" />
+      <Tabs tabs={tabs} tabClassName="px-8 " />
     </div>
   );
 }
@@ -89,7 +89,7 @@ const LokaImg = () => {
                 </Link>
             </div>
 
-            <div className="relative h-[320px] w-[260.35px] md:h-[400px] md:w-[325.43px] rounded-3xl pt-4 hidden md:flex">
+            <div className="relative h-[320px] w-[260.35px] md:h-[400px] md:w-[325.43px] rounded-3xl pt-4 md:flex">
                 <Image src="/projects/show-lokantara.png" alt="showloka" fill></Image>
             </div>
 
@@ -112,7 +112,7 @@ const BuangbijakImg = () => {
                     </Button>
                 </Link>
             </div>
-            <div className="relative h-[280px] w-[289.47px] md:h-[400px] md:w-[413.53px] rounded-3xl pt-4 hidden md:flex">
+            <div className="relative h-[280px] w-[289.47px] md:h-[400px] md:w-[413.53px] rounded-3xl pt-4 md:flex">
                 <Image src="/projects/show-buangbijak.png" alt="showloka" fill></Image>
             </div>
         </div>
@@ -134,7 +134,7 @@ const UrideImg = () => {
                     </Button>
                 </Link>
             </div>
-            <div className="relative h-[400px] w-[266.7px] md:h-[412.5px] md:w-[275px] rounded-3xl pt-4 hidden md:flex">
+            <div className="relative h-[400px] w-[266.7px] md:h-[412.5px] md:w-[275px] rounded-3xl pt-4 md:flex">
                 <Image src="/projects/show-uride.png" alt="showuride" fill></Image>
             </div>
         </div>
@@ -156,7 +156,7 @@ const AimoImg = () => {
                     </Button>
                 </Link>
             </div>
-            <div className="relative h-[300px] w-[280.57px] md:h-[400px] md:w-[374.09px] rounded-3xl pt-4 hidden md:flex">
+            <div className="relative h-[300px] w-[280.57px] md:h-[400px] md:w-[374.09px] rounded-3xl pt-4 md:flex">
                 <Image src="/projects/show-aimo.png" alt="showaimo" fill></Image>
             </div>
         </div>

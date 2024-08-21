@@ -25,14 +25,14 @@ export default function navbar() {
     return (
         <div className='fixed flex flex-col z-50'>
             
-            <div className='bg-[#121212] bg-opacity-50 backdrop-blur-xl w-full px-8 py-5 flex flex-col items-left h-fit'>
-                <div className='flex items-center justify-between md:justify-between'>
+            <div className='bg-[#121212] bg-opacity-50 backdrop-blur-xl w-full px-6 py-5 flex flex-col items-left h-fit'>
+                <div className='flex justify-between md:justify-between w-full md:max-w-[14400px] gap-24 mx-auto'>
 
                     <div className='relative h-[25px] w-[25px]'>
-                        <Image src="/logo-z.png" alt='logo' fill></Image>
+                        <Image src="/navbar/logo-z.svg" alt='logo' fill></Image>
                     </div>
 
-                    <div className='hidden md:flex gap-12 mr-[60px]'>
+                    <div className='hidden md:flex gap-12'>
                         <ul className='flex gap-12'>
                             <a href="#home"><li className="listnavbar">Home</li></a>
                             <a href="#aboutme"><li className="listnavbar">About Me</li></a>
@@ -64,7 +64,7 @@ export default function navbar() {
                     initial={{ opacity: 0, y: -50 }}
                     animate={controls}
                     transition={{ duration: 0.3 }}
-                    className={`flex flex-col gap-8 items-start px-8 w-full h-screen pt-6 bg-[#121212] bg-opacity-0 backdrop-blur-xl md:hidden ${show ? 'block' : 'hidden'}`}                >
+                    className={`flex flex-col gap-8 items-start px-8 w-full h-screen pt-6 bg-[#121212] bg-opacity-30 backdrop-blur-xl md:hidden ${show ? 'block' : 'hidden'}`}                >
                     <a href="#home" onClick={handleOnClick}><li className="listnavbar">Home</li></a>
                     <a href="#aboutme" onClick={handleOnClick}><li className="listnavbar">About Me</li></a>
                     <a href="#experiences" onClick={handleOnClick}><li className="listnavbar">Experiences</li></a>
