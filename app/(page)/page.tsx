@@ -66,7 +66,7 @@ export default function Home() {
           />
 
           <Card
-            href="https://www.instagram.com/medium/"
+            href="https://medium.com/@mhmdrazn"
             img="/contacts/medium.png"
             username="mhmdrazn"
              platform="Medium"
