@@ -24,7 +24,7 @@ const contactCard: React.FC<ContactProps> = ({href, img, username, platform}) =>
           <div className="font-bold md:text-[20px] text-md">{platform}</div>
         </div>
         <div className="text-[#696969] md:text-[16px] text-sm">
-          @{username}
+          {username}
         </div>
       </button>
     </Link>

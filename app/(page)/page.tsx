@@ -16,7 +16,7 @@ export default function Home() {
       <section className="overflow-hidden">
         <Hero/>
       </section>
-      <section id="aboutme" className="bg-black relative justify-start flex overflow-hidden">
+      <section id="aboutme" className="bg-black relative justify-start flex overflow-hidden py-6">
         <AboutMe/>
       </section>
       <section id="experiences">
@@ -35,7 +35,7 @@ export default function Home() {
           <Card
             href="https://github.com/mhmdrazn"
             img="/contacts/github.png"
-            username="mhmdrazn"
+            username="@mhmdrazn"
             platform="Github"
           />
 
@@ -50,7 +50,7 @@ export default function Home() {
             <Card
               href="https://www.instagram.com/mhmdrazn/"
               img="/contacts/ig.png"
-              username="mhmdrazn"
+              username="@mhmdrazn"
               platform="Instagram"
             />
           </div>
@@ -61,14 +61,14 @@ export default function Home() {
           <Card
             href="https://www.dribbble.com/mhmdrazn/"
             img="/contacts/dribbble.png"
-            username="mhmdrazn"
+            username="@mhmdrazn"
              platform="Dribbble"
           />
 
           <Card
             href="https://medium.com/@mhmdrazn"
             img="/contacts/medium.png"
-            username="mhmdrazn"
+            username="@mhmdrazn"
              platform="Medium"
           />
         </div>
