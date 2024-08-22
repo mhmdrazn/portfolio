@@ -143,8 +143,8 @@ const UrideImg = () => {
 
 const AimoImg = () => {
     return (
-        <div className="flex flex-col lg:flex-row gap-12 h-fit w-fit justify-between place-items-center px-3 md:px-6 pb-3 md:pb-4 lg:pb-12 lg:pt-4">
-            <div className="flex flex-col gap-6">
+        <div className="flex flex-col lg:flex-row gap-12 h-fit w-full justify-between place-items-center px-3 md:px-6 pb-3 md:pb-4 lg:pb-12 lg:pt-1">
+            <div className="flex flex-col gap-6 w-96">
                 <div className="relative h-[25px] w-[76.58px]">
                     <Image src="/projects/aimo.png" alt="aimo" fill></Image> 
                 </div>
