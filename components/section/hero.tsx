@@ -61,7 +61,7 @@ export default function hero() {
                                 Portfolio
                             </Button>
                         </Link>
-                        <Link href="https://drive.google.com/uc?export=download&id=1_QeC48sM0Mtt9k8J0UGyCVvhDEdYoAeD">
+                        <Link href="https://drive.google.com/uc?export=download&id=10F4hm24ngdmHdlXtxscbtL9pyf5CW3A-">
                             <Button size="sm" color="default" variant="ghost" className="w-24 py-[8px]">
                                 CV
                             </Button>                            
