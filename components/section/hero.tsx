@@ -82,7 +82,7 @@ export default function hero() {
                     </div>
                 </div>
             </div>
-            <BackgroundBeams className="z-10 opacity-30"/>
+            <BackgroundBeams className="z-10 md:opacity-30 opacity-90"/>
         </section>
     )
 }
