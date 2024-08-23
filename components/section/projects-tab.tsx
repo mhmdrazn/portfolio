@@ -106,7 +106,7 @@ const BuangbijakImg = () => {
                 </div>
                 <h1 className="font-bold w-full md:max-w-[640px] lg:max-w-[480px] text-[28px] lg:text-[32px] leading-tight">Transforming Waste for a Cleaner Future</h1>
                 <p className="text-justify font-thin text-[#999999] w-full md:max-w-[640px] lg:max-w-[480px] text-[14px] leading-normal"> <span className="font-semibold">BuangBijak</span> is a mobile app that promotes sustainable waste management by connecting users with recycling services and offering rewards for waste collection. The app provides an on-demand service for garbage collectors, making disposal efficient and accessible. It also features a platform for sharing or selling used items, encouraging a more sustainable and eco-friendly community.</p>
-                <Link href="https://intip.in/PrototypeBuangBijak">
+                <Link href="https://www.figma.com/proto/FLVbiNd05RG9mma5JX4Rul/BuangBijak?node-id=10-119&t=Exzto4g4ATy6N5GY-0&scaling=scale-down&content-scaling=responsive&page-id=0%3A1&starting-point-node-id=8%3A2">
                     <Button color="default" size="sm" variant="flat" className="px-[32px] py-[8px] text-thin">
                         See Prototype
                     </Button>
