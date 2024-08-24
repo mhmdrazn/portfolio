@@ -85,6 +85,45 @@ const content = [
       ),
     },
     {
+      title: 
+      <div className="flex flex-col gap-4">
+        <div className="flex gap-[24px]">
+            <div className="relative w-[112.7px] h-[100px] scale-80">
+                <Image src="/experience/mabacup.svg" alt="mabacup" fill></Image>
+            </div>
+            <div className="text-[36px] font-bold self-center">Maba Cup 2024</div>
+        </div>
+        <div className="flex gap-8">
+          <div className="text-[16px] font-medium text-[#737373]">
+            Lead UI/UX Designer
+          </div>
+          <div className="text-[16px] font-medium text-[#737373]">
+            Aug 24 - Present
+          </div>
+        </div>
+      </div>,
+      description:
+        <div className="flex flex-col gap-6 text-sm leading-relaxed font-light md:text-base">
+         As the Lead UI/UX Designer for Maba Cup, Me and my teams was responsible for crafting and developing the event's website. Focused on creating engaging visuals and a responsive design to ensure a seamless experience across devices. <br /><br /> I established a comprehensive design system and design guidelines to maintain consistency and coherence. Additionally, I managed tasks for the UI/UX team, ensuring that design work met quality standards and project time.
+          <Link href="https:/mabacup-its.com">
+            <Button className="w-fit px-8 bg-gradient-glass">
+              <div className="h-[23px] w-fit">
+                  Go to page
+              </div>
+              <div className="relative self-center h-[15px] w-[15px]">
+                  <Image src="/export.svg" alt="export" fill></Image>
+              </div>
+            </Button>
+          </Link>
+        </div>,
+      content: (
+        <div className="h-[320px] text-center w-[480x] flex items-center relative justify-center">
+          {/* Soon Posted! <br />Haven't take a photos yet. Lol */}
+          <Image src="/experience/iselp.svg" alt="iselp" fill></Image>
+        </div>
+      ),
+    },
+    {
       title:
         <div className="flex flex-col gap-4">
           <div className="relative w-[186.47px] h-[35px]">
