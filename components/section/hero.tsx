@@ -56,12 +56,12 @@ export default function hero() {
                     </div>
 
                     <div className="md:hidden space-x-2 md:space-x-4 flex justify-center">
-                        <Link href="https://drive.google.com/uc?export=download&id=1MTfq-1S3hDR8pdZ0bQFNoxDhGcc6zcin">
+                        <Link href="https://drive.google.com/uc?export=download&id=1-3w5jUqqUCXPEAqW7l5Tv3JS-GHAAs5k">
                             <Button size="sm" color="default" variant="shadow" className="px-[24px] py-[8px]">
                                 Portfolio
                             </Button>
                         </Link>
-                        <Link href="https://drive.google.com/uc?export=download&id=10F4hm24ngdmHdlXtxscbtL9pyf5CW3A-">
+                        <Link href="https://drive.google.com/uc?export=download&id=1ljySPbJ5MvzMak7IFJoCukMq5qyPAm4f">
                             <Button size="sm" color="default" variant="ghost" className="w-24 py-[8px]">
                                 CV
                             </Button>                            
@@ -69,12 +69,12 @@ export default function hero() {
                     </div>
 
                     <div className="hidden md:flex space-x-2 md:space-x-4 justify-center">
-                        <Link href="https://drive.google.com/uc?export=download&id=1MTfq-1S3hDR8pdZ0bQFNoxDhGcc6zcin">
+                        <Link href="https://drive.google.com/uc?export=download&id=1-3w5jUqqUCXPEAqW7l5Tv3JS-GHAAs5k">
                             <Button color="default" variant="shadow" className="w-32 px-[16px] py-[8px]">
                                 Portfolio
                             </Button>
                         </Link>
-                        <Link href="https://drive.google.com/uc?export=download&id=10G0WAxqlXvvyWOASeHTWb7uFTYHUKCCR">
+                        <Link href="https://drive.google.com/uc?export=download&id=1ljySPbJ5MvzMak7IFJoCukMq5qyPAm4f">
                             <Button color="default" variant="ghost" className="w-32 px-[16px] py-[8px]">
                                 CV
                             </Button>                            
