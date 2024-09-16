@@ -1,6 +1,8 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+
 import { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { HiOutlineX } from 'react-icons/hi';
@@ -34,11 +36,11 @@ export default function navbar() {
 
                     <div className='hidden md:flex gap-12'>
                         <ul className='flex gap-12'>
-                            <a href="#home"><li className="listnavbar">Home</li></a>
-                            <a href="#aboutme"><li className="listnavbar">About Me</li></a>
-                            <a href="#experiences"><li className="listnavbar">Experiences</li></a>
-                            <a href="/projects"><li className="listnavbar">Projects</li></a>
-                            <a href="#contacts"><li className="listnavbar">Contacts</li></a>
+                            <Link href="/"><li className="listnavbar">Home</li></Link>
+                            <Link href="//#aboutme"><li className="listnavbar">About Me</li></Link>
+                            <Link href="//#experiences"><li className="listnavbar">Experiences</li></Link>
+                            <Link href="/projects"><li className="listnavbar">Projects</li></Link>
+                            <Link href="//#contacts"><li className="listnavbar">Contacts</li></Link>
                         </ul>
                     </div>
 
