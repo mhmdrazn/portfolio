@@ -93,7 +93,7 @@ export default function Aboutme() {
       <div className="flex flex-col gap-10 items-center justify-center w-full px-6 h-fit">
         <div className="flex gap-5 items-center">  
           <p className="text-[#999999]">Discover me on</p>
-          <Link href="https://medium.com/mhmdrazn" className="flex gap-4">
+          <Link href="https://medium.com/@mhmdrazn" className="flex gap-4">
             <div className="w-[30px] h-[30px] relative">
               <Image src="/contacts/medium.png" alt="medium" fill></Image>
             </div>
