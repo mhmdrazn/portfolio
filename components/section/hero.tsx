@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import {Button} from "@nextui-org/button";
 import { FlipWords } from "../ui/flip-words";
 import { TypeAnimation } from 'react-type-animation';
-import { BackgroundBeams } from "@/components/ui/backgroundbeams";
+// import { BackgroundBeams } from "@/components/ui/backgroundbeams";
 
 
 export default function hero() {
@@ -82,7 +82,7 @@ export default function hero() {
                     </div>
                 </div>
             </div>
-            <BackgroundBeams className="z-10 md:opacity-30 opacity-90"/>
+            {/* <BackgroundBeams className="z-10 md:opacity-30 opacity-90"/> */}
         </section>
     )
 }
