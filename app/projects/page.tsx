@@ -6,6 +6,7 @@ import { Button } from '@nextui-org/button';
 import Navbar from "@/components/section/navbar";
 import ProjectsCard from '@/components/molecules/projectsCard';
 import {Divider} from "@nextui-org/divider";
+import {Chip} from "@nextui-org/chip";
 
 export default function page() {
   return (
@@ -46,6 +47,11 @@ export default function page() {
           </div>
           <div className='lg:text-lg w-full font-light'>
             Showcase of my works on UI/UX Design.
+          </div>
+
+          <div className='flex flex-row gap-3'>
+            <Chip radius="sm" size='lg' variant='solid' className='p-4 font-thin text-sm'>Mobile Application</Chip>
+            <Chip radius="sm" size='lg' variant='flat' className='p-4 font-thin text-sm bg-gradient-glass'>Website Design</Chip>
           </div>
         </div>
 
