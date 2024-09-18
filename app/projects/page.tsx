@@ -68,7 +68,7 @@ export default function page() {
               banner='/banner-projects/banner-loka.png'
               logo='/projects/loka.png'
               desc='Focusing on the Nusantara subtheme, this app promotes unique destinations across Indonesia. Lokantara provides up-to-date information on tourist spots, cultural richness, and local cuisine, fostering pride in Indonesian heritage.'
-              link=''
+              link='/projects/lokantara'
               ukuranLogo='relative h-[35px] w-[184.1px]'
             />
 
@@ -77,7 +77,7 @@ export default function page() {
               banner='/banner-projects/banner-buangbijak.png'
               logo='/projects/buangbijak.png'
               desc='BuangBijak, a recycling and waste management application. BuangBijak aims to connect users with recycling services to promote environmental cleanliness by facilitating the collection, classification, and recycling of unused items.'
-              link=''
+              link='projects/buangbijak'
               ukuranLogo='relative h-[35px] w-[195.92px]'
             />
           </div>
@@ -87,7 +87,7 @@ export default function page() {
               banner='/banner-projects/banner-uride.png'
               logo='/projects/uride.png'
               desc='URide revolutionizes automotive vehicle assistance in Indonesia, providing on demand repairs and real-time monitoring. It connects users with skilled mechanics swiftly and transparently, boosting business opportunities for workshops'
-              link=''
+              link='projects/uride'
               ukuranLogo='relative h-[35px] w-[101.89px]'
             />
 
@@ -96,7 +96,7 @@ export default function page() {
               banner='/banner-projects/banner-aimo.png'
               logo='/projects/aimo.png'
               desc='Aimo is a mental health protection application specifically for mothers which aims to reduce the risk of mental disorders due to depression. Focuses on education, detection and assistance for pre-natal and post-natal mothers'
-              link=''
+              link='projects/aimo'
               ukuranLogo='relative h-[35px] w-[107.21px]'
             />
           </div>
