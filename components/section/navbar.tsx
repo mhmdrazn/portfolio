@@ -67,11 +67,11 @@ export default function navbar() {
                     animate={controls}
                     transition={{ duration: 0.3 }}
                     className={`flex flex-col gap-8 items-start px-8 w-full h-screen pt-6 bg-[#121212] bg-opacity-30 backdrop-blur-xl md:hidden ${show ? 'block' : 'hidden'}`}                >
-                    <a href="#home" onClick={handleOnClick}><li className="listnavbar">Home</li></a>
-                    <a href="#aboutme" onClick={handleOnClick}><li className="listnavbar">About Me</li></a>
-                    <a href="#experiences" onClick={handleOnClick}><li className="listnavbar">Experiences</li></a>
-                    <a href="#projects" onClick={handleOnClick}><li className="listnavbar">Projects</li></a>
-                    <a href="#contacts" onClick={handleOnClick}><li className="listnavbar">Contacts</li></a>
+                    <a href="/" onClick={handleOnClick}><li className="listnavbar">Home</li></a>
+                    <a href="//aboutme" onClick={handleOnClick}><li className="listnavbar">About Me</li></a>
+                    <a href="//experiences" onClick={handleOnClick}><li className="listnavbar">Experiences</li></a>
+                    <a href="/projects" onClick={handleOnClick}><li className="listnavbar">Projects</li></a>
+                    <a href="//#contacts" onClick={handleOnClick}><li className="listnavbar">Contacts</li></a>
                 </motion.ul>
             </div>
         </div>

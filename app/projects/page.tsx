@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function page() {
   return (
-    <div className='bg-black flex flex-col h-full'>
+    <div className='bg-black flex flex-col h-full w-screen'>
       <Navbar/>
       <div className='flex flex-col pt-[96px] items-center justify-center gap-5 px-36 h-screen w-full z-20'>
         <div className='flex flex-col pt-[96px] items-center justify-center gap-2'>
@@ -30,8 +30,6 @@ export default function page() {
             </div>
           </Button>
         </Link>
-        
-
       </div>
 
       <div className=' w-full h-full absolute h-screen-nav opacity-50'>
