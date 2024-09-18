@@ -143,15 +143,15 @@ const UrideImg = () => {
 
 const AimoImg = () => {
     return (
-        <div className="flex flex-col lg:flex-row gap-12 h-fit w-full justify-between place-items-center px-3 md:px-6 pb-3 md:pb-4 lg:pb-12 lg:pt-1">
-            <div className="flex flex-col gap-6 w-96">
+        <div className="flex flex-col lg:flex-row gap-12 h-fit w-fit justify-between place-items-center px-3 md:px-6 pb-3 md:pb-4 lg:pb-12 lg:pt-1">
+            <div className="flex flex-col gap-6">
                 <div className="relative h-[25px] w-[76.58px]">
                     <Image src="/projects/aimo.png" alt="aimo" fill></Image> 
                 </div>
                 <h1 className="font-bold w-full md:max-w-[640px] lg:max-w-[480px] text-[24px] lg:text-[32px] leading-tight">Empowering Mothers Against Postpartum Depression</h1>
-                <p className="text-justify font-thin text-[#999999] w-full md:max-w-[640px] lg:max-w-[480px] text-[14px] leading-normal"> <span className="font-semibold">Aimo</span> is a mental health app designed to reduce the risk of postpartum depression (PPD) in expectant mothers. It offers literacy-based education, early prevention, and personalized post-birth guidance using the Edinburgh Postnatal Depression Scale (EPDS). Aimo ensures comprehensive support by involving husbands, family, friends, and healthcare professionals in assisting mothers experiencing PPD.</p>
+                <p className="text-justify w-full font-thin text-[#999999] md:max-w-[640px] lg:max-w-[480px] text-[14px] leading-normal"> <span className="font-semibold">Aimo</span> is a mental health app designed to reduce the risk of postpartum depression (PPD) in expectant mothers. It offers literacy-based education, early prevention, and personalized post-birth guidance using the Edinburgh Postnatal Depression Scale (EPDS). Aimo ensures comprehensive support by involving husbands, family, friends, and healthcare professionals in assisting mothers experiencing PPD.</p>
                 <Link href="https://www.figma.com/proto/oa0GcifcAdurFxMFdaa3Bo/Aimo?node-id=233-2616&t=BCEM1VluA9MNekoN-1&scaling=contain&page-id=9%3A3&starting-point-node-id=233%3A2616">
-                    <Button color="default" variant="flat" className="px-[32px] py-[8px] text-thin">
+                    <Button color="default" variant="flat" className="px-[32px] py-[8px] text-thin w-fit">
                         See Prototype
                     </Button>
                 </Link>
