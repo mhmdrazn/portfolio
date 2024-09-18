@@ -57,7 +57,7 @@ export default function page() {
 
         <Divider className='md:w-[756px] lg:w-[1024px]'></Divider>
         
-        <div className='md:w-[756px] lg:w-[1024px] text-2xl'>
+        <div className='md:w-[756px] lg:w-[1024px] text-lg'>
           Mobile Application
         </div>
 
@@ -104,7 +104,7 @@ export default function page() {
 
         <Divider className='md:w-[756px] lg:w-[1024px]'></Divider>
 
-        <div className='md:w-[756px] lg:w-[1024px] text-2xl'>
+        <div className='md:w-[756px] lg:w-[1024px] text-lg'>
           Website Design
         </div>
         
