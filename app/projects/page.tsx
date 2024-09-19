@@ -24,10 +24,10 @@ export default function page() {
   }
 
   return (
-    <div className='bg-black flex flex-col h-full min-h-screen w-full pb-16'>
+    <div className='bg-black flex flex-col h-full min-h-screen w-full items-center pb-16'>
       <Navbar/>
 
-      <div className='flex flex-col gap-7 md:gap-8 mt-20 md:pt-32 px-8 md:px-16 lg:px-24 w-full h-fit max-h-full pb-8 items-start md:items-center overflow-hidden'>
+      <div className='flex flex-col gap-7 md:gap-8 pt-24 pb-8 md:pt-28 px-8 md:px-16 lg:px-24 w-fit h-fit max-h-full items-start md:items-center md:justify-center overflow-hidden'>
         <div className='flex flex-col gap-3 md:w-[756px] lg:w-[1024px]'>
           <div className='text-4xl md:text-4xl w-full font-bold'>
             Projects
@@ -36,7 +36,7 @@ export default function page() {
             Showcase of my works on UI/UX Design.
           </div>
 
-          <div className='flex flex-row gap-4'>
+          <div className='flex flex-row gap-3'>
             <motion.div
               whileTap={{ scale: 0.95 }}
               animate={{ scale: activeFilters.mobile ? 1 : 0.99 }}
