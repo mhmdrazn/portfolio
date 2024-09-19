@@ -27,7 +27,7 @@ export default function page() {
     <div className='bg-black flex flex-col h-full min-h-screen w-full pb-16'>
       <Navbar/>
 
-      <div className='flex flex-col gap-7 md:gap-8 pt-20 md:pt-32 px-8 md:px-16 lg:px-24 w-full h-fit max-h-full pb-8 items-start md:items-center overflow-hidden'>
+      <div className='flex flex-col gap-7 md:gap-8 mt-20 md:pt-32 px-8 md:px-16 lg:px-24 w-full h-fit max-h-full pb-8 items-start md:items-center overflow-hidden'>
         <div className='flex flex-col gap-3 md:w-[756px] lg:w-[1024px]'>
           <div className='text-4xl md:text-4xl w-full font-bold'>
             Projects
