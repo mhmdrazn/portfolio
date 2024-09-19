@@ -198,7 +198,7 @@ const content = [
 
   export default function StickyScrollRevealDemo() {
     return (
-      <div>
+      <div className="overflow-y-auto">
         <StickyScroll content={content} />
       </div>
     );

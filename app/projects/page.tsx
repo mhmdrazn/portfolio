@@ -1,8 +1,6 @@
 'use client'
 import React from 'react'
-import Navbar from "@/components/section/navbar";
 import Image from 'next/image';
-import { Button } from '@nextui-org/button';
 import Link from 'next/link';
 
 import { Button } from '@nextui-org/button';
