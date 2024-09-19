@@ -24,11 +24,11 @@ export default function page() {
   }
 
   return (
-    <div className='bg-black flex flex-col h-full min-h-screen w-full items-center pb-16'>
+    <div className='flex bg-[#121212] flex-col h-full min-h-screen w-full items-start pb-16'>
       <Navbar/>
 
-      <div className='flex flex-col gap-7 md:gap-8 pt-24 pb-8 md:pt-28 px-8 md:px-16 lg:px-24 w-fit h-fit max-h-full items-start md:items-center md:justify-center overflow-hidden'>
-        <div className='flex flex-col gap-3 md:w-[756px] lg:w-[1024px]'>
+      <div className='flex flex-col gap-7 md:gap-8 pt-24 pb-8 md:pt-28 px-8 md:px-16 lg:px-24 w-full h-fit max-h-full items-start md:items-center md:justify-center overflow-hidden'>
+        <div className='flex flex-col gap-3 w-full md:w-[756px] lg:w-[1024px]'>
           <div className='text-4xl md:text-4xl w-full font-bold'>
             Projects
           </div>

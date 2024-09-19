@@ -30,9 +30,12 @@ export default function navbar() {
             <div className='bg-[#121212] bg-opacity-50 backdrop-blur-xl w-full px-6 py-5 flex flex-col items-left h-fit'>
                 <div className='flex justify-between md:justify-between w-full md:max-w-[14400px] gap-24 mx-auto'>
 
-                    <div className='relative h-[25px] w-[25px]'>
-                        <Image src="/navbar/logo-z.svg" alt='logo' fill></Image>
-                    </div>
+                    <Link href="/" className='cursor-pointer'>
+                        <div className='relative h-[25px] w-[25px]'>
+                            <Image src="/navbar/logo-z.svg" alt='logo' fill></Image>
+                        </div>
+                    </Link>
+                    
 
                     <div className='hidden md:flex gap-12'>
                         <ul className='flex gap-12'>

@@ -16,7 +16,7 @@ type ProjectsProps = {
 const projectsCard: React.FC<ProjectsProps> = ({nama, banner, logo, desc, link, ukuranLogo}) => {
   return (
     <div className='flex flex-col gap-3 h-fit w-fit'>
-        <div className='flex flex-col bg-gradient-glass gap-6 w-full md:w-[366px] lg:w-[500px] lg:h-[570px] md:h-[500px] h-fit rounded-2xl p-7 '>
+        <div className='flex flex-col bg-gradient-glass gap-6 w-full md:w-[366px] lg:w-[500px] lg:h-[570px] md:h-[500px] h-fit rounded-2xl p-5 md:p-7'>
             <div className='relative h-[220px] md:w-[310px] md:h-[193.75px] lg:w-[444px] lg:h-[277.5px] overflow-clip rounded-md'>
                 <Image src={banner} alt={nama} className='object-cover' fill></Image>
             </div>
