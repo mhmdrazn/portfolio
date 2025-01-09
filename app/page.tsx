@@ -28,7 +28,6 @@ export default function Home() {
       
 
       {/* section contacts */}
-      
       <section id="contacts" className="w-full h-fit bg-neutral-900 pt-[64px] py-[32px] px-6 flex-col flex mx-auto justify-center items-center gap-6 overflow-hidden">
         <h1 className="font-extrabold text-[1.5rem] leading-tight justfiy-center max-w-[360px] mx-auto items-center h-fit text-center mb-8 md:text-[36px] lg:text-[48px] md:max-w-[480px] lg:max-w-[640px] overflow-hidden">Dive In below to explore our collaboration!</h1>
         <div className="justify-center items-center mx-auto flex-col flex gap-6 xl:flex-row md:flex-col overflow-hidden">
@@ -62,14 +61,14 @@ export default function Home() {
             href="https://www.dribbble.com/mhmdrazn/"
             img="/contacts/dribbble.png"
             username="@mhmdrazn"
-             platform="Dribbble"
+            platform="Dribbble"
           />
 
           <Card
             href="https://medium.com/@mhmdrazn"
             img="/contacts/medium.png"
             username="@mhmdrazn"
-             platform="Medium"
+            platform="Medium"
           />
         </div>
 

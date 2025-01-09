@@ -131,7 +131,7 @@ const CARDS = [
     content: (
       <p>
         If we develop a small program for our CPU that allows division of two numbers by performing repeated subtraction operations. For example, to divide 16 by 4, we perform repeated subtraction such as 16 minus 4, 4, 4, until we reach zero or a negative number as a marker for completion. <br/> <br/> However, this approach is very inefficient...<br /><br />
-       </p>
+      </p>
     ),
   },
 ];

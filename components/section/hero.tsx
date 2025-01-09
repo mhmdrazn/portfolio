@@ -56,12 +56,12 @@ export default function hero() {
                     </div>
 
                     <div className="md:hidden space-x-2 md:space-x-4 flex justify-center">
-                        <Link href="https://drive.google.com/uc?export=download&id=1-3w5jUqqUCXPEAqW7l5Tv3JS-GHAAs5k">
+                        <Link href="https://drive.google.com/file/d/1WVJ5-pqrk1eJ-9xwmy85yQmLBzwmlbSm/view?usp=sharing">
                             <Button size="sm" color="default" variant="shadow" className="px-[24px] py-[8px]">
                                 Portfolio
                             </Button>
                         </Link>
-                        <Link href="https://drive.google.com/uc?export=download&id=1ljySPbJ5MvzMak7IFJoCukMq5qyPAm4f">
+                        <Link href="https://drive.google.com/file/d/1Sgtvdd4dA-lvJ9cCt0pM-K7KG7gZisN1/view?usp=sharing">
                             <Button size="sm" color="default" variant="ghost" className="w-24 py-[8px]">
                                 CV
                             </Button>                            
@@ -69,12 +69,12 @@ export default function hero() {
                     </div>
 
                     <div className="hidden md:flex space-x-2 md:space-x-4 justify-center">
-                        <Link href="https://drive.google.com/uc?export=download&id=1-3w5jUqqUCXPEAqW7l5Tv3JS-GHAAs5k">
+                        <Link href="https://drive.google.com/file/d/1WVJ5-pqrk1eJ-9xwmy85yQmLBzwmlbSm/view?usp=sharing">
                             <Button color="default" variant="shadow" className="w-32 px-[16px] py-[8px]">
                                 Portfolio
                             </Button>
                         </Link>
-                        <Link href="https://drive.google.com/uc?export=download&id=1ljySPbJ5MvzMak7IFJoCukMq5qyPAm4f">
+                        <Link href="https://drive.google.com/file/d/1Sgtvdd4dA-lvJ9cCt0pM-K7KG7gZisN1/view?usp=sharing">
                             <Button color="default" variant="ghost" className="w-32 px-[16px] py-[8px]">
                                 CV
                             </Button>                            

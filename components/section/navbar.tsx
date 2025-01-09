@@ -8,7 +8,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { HiOutlineX } from 'react-icons/hi';
 import { HiMenuAlt3 } from 'react-icons/hi';
 
-export default function navbar() {
+export default function Navbar() {
     const [show, setShow] = useState(false);
     const controls = useAnimation();
 

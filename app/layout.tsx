@@ -6,7 +6,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"], 
-  weight:["200", "300", '400', "500", "600", "700", "800"]
+  weight:["200", "300", '400', "500", "600", "700", "800"] 
 });
 
 export const metadata: Metadata = {
