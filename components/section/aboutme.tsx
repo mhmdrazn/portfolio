@@ -97,7 +97,7 @@ export default function Aboutme() {
             <div className="w-[30px] h-[30px] relative">
               <Image src="/contacts/medium.png" alt="medium" fill></Image>
             </div>
-            <p className="text-[18px] font-medium underline">Medium</p>
+            <p className="text-[18px] text-white font-medium underline">Medium</p>
           </Link>
         </div>
         
@@ -121,7 +121,7 @@ const CARDS = [
     name: "Central Processing Unit: The Cognitive Hub of a Computer",
     content: (
       <p>
-        Like the heart of a computer, the CPU or central processing unit is the unit that is responsible for executing the various programs that we run. Various programs such as Microsoft Office, Safari, or Opera, consist of a series of individual operations called instructions, because these instructions "instruct" the computer what to do. <br /><br />
+        Like the heart of a computer, the CPU or central processing unit is the unit that is responsible for executing the various programs that we run. Various programs such as Microsoft Office, Safari, or Opera, consist of a series of individual operations called instructions, because these instructions &quot;instruct&quot; the computer what to do. <br /><br />
       </p>
     ),
   },

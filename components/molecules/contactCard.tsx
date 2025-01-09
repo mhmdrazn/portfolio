@@ -21,7 +21,7 @@ const contactCard: React.FC<ContactProps> = ({href, img, username, platform}) =>
           <div className="flex md:hidden relative w-[20px] h-[20px] self-center">
             <Image src={img} alt={username} fill></Image>
           </div>
-          <div className="font-bold md:text-[20px] text-md">{platform}</div>
+          <div className="font-bold md:text-[20px] text-white text-md">{platform}</div>
         </div>
         <div className="text-[#696969] md:text-[16px] text-sm">
           {username}

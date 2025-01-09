@@ -24,10 +24,10 @@ export default function hero() {
             <div className="container justify-center z-20 mt-24 md:mt-56 lg:mt-96">
                 <div className="space-y-6 justify-center">
                     <div className = "flex-row space-y-4 lg:space-y-4">
-                        <h1 className = "text-[20px] font-extrabold leading-tight text-shadow-white text-center max-w-full md:text-[56px] lg:text-[70px] text-glow">Design. Develop.<FlipWords words={words}/> </h1>
+                        <h1 className = "text-[20px] text-white font-extrabold leading-tight text-shadow-white text-center max-w-full md:text-[56px] lg:text-[70px] text-glow">Design. Develop.<FlipWords words={words}/> </h1>
                         <div className = "relative items-center justify-center flex flex-col gap-0 lg:gap-2">
-                            <p className = "relative text-[16px] font-bold justify-center text-center lg:text-[32px]">I am <span>Muhammad Razan</span></p>
-                            <p className = "relative text-[12px] font-thin justify-center text-center lg:text-[24px]">A passionate <span className="font-extrabold">
+                            <p className = "relative text-[16px] font-bold text-white justify-center text-center lg:text-[32px]">I am <span>Muhammad Razan</span></p>
+                            <p className = "relative text-[12px] font-thin text-white justify-center text-center lg:text-[24px]">A passionate <span className="font-extrabold">
                                     <TypeAnimation sequence={[
                                         'UI/UX', // Types 'One'
                                         150, // Waits 2s

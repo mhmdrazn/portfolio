@@ -69,10 +69,10 @@ export const StickyScroll = ({
       className="lg:h-[45rem] md:h-[50rem] h-[60rem] no-visible-scrollbar overflow-y-auto lg:flex justify-center relative md:space-x-10 lg:p-12 md:p-16"
       ref={ref}
     >
-      <div className="lg:hidden flex h-fit md:h-fit w-full font-bold md:text-[56px] px-8 py-12 z-10 backdrop-blur-sm text-[2rem] sticky top-0 lg:leading-tight md:leading-none leading-tight lg:items-center text-left ">
+      <div className="lg:hidden text-white flex h-fit md:h-fit w-full font-bold md:text-[56px] px-8 py-12 z-10 backdrop-blur-sm text-[2rem] sticky top-0 lg:leading-tight md:leading-none leading-tight lg:items-center text-left ">
         My Career and <br /> Expertise Journey.
       </div>
-      <h1 className="hidden lg:flex h-full w-fit font-bold text-[56px] sticky top-0 lg:leading-tight items-center text-left">
+      <h1 className="hidden text-white lg:flex h-full w-fit font-bold text-[56px] sticky top-0 lg:leading-tight items-center text-left">
         My Career <br /> and Expertise <br /> Journey.
       </h1>
       <div className="div relative flex lg:items-start md:items-center justify-center md:p-12 p-8 py-10">

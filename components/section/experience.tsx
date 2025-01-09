@@ -13,7 +13,7 @@ const content = [
             <div className="relative w-[34.05px] h-[52px] scale-80">
                 <Image src="/experience/betau.png" alt="betau" fill></Image>
             </div>
-            <div className="text-[36px] font-bold self-center">Beta.U</div>
+            <div className="text-[36px] font-bold self-center">BetaU</div>
         </div>
         <div className="flex gap-8">
           <div className="text-[16px] font-medium text-[#737373]">
@@ -40,7 +40,6 @@ const content = [
       </div>,
       content: (
         <div className="h-[320px] w-[480px] bg-[#121212] flex items-center relative justify-center">
-          {/* Soon Posted! <br />Haven't take a photos yet. Lol */}
           <Image src="/experience/betayu.svg" alt="betaulp" fill></Image>
         </div>
       ),  
@@ -104,7 +103,7 @@ const content = [
       </div>,
       description:
         <div className="flex flex-col gap-6 text-sm leading-relaxed font-light md:text-base">
-         As the Lead UI/UX Designer for Maba Cup, Me and my teams was responsible for crafting and developing the event's website. Focused on creating engaging visuals and a responsive design to ensure a seamless experience across devices. <br /><br /> I established a comprehensive design system and design guidelines to maintain consistency and coherence. Additionally, I managed tasks for the UI/UX team, ensuring that design work met quality standards and project time.
+          As the Lead UI/UX Designer for Maba Cup, Me and my teams was responsible for crafting and developing the event&apos;s website. Focused on creating engaging visuals and a responsive design to ensure a seamless experience across devices. <br /><br /> I established a comprehensive design system and design guidelines to maintain consistency and coherence. Additionally, I managed tasks for the UI/UX team, ensuring that design work met quality standards and project time.
           <Link href="https:/mabacup-its.com">
             <Button className="w-fit px-8 bg-gradient-glass">
               <div className="h-[23px] w-fit">
